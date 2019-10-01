@@ -40,7 +40,7 @@ Object includes all the information related to it / pictures ,parses will be obj
     * `ObjectID` is used for querying it.(AS Math.random a number to select which object will be utilized.) 
     * `Pictures[]` is a array that stores images with attributes:
     * `ImageID` is used for querying it.
-    * `Strength` is used to symbolize the strength of this material(range is [-3,3]), while `-3` denotes this material is    strong negative, `-2` denotes this material is negative, '-1' denotes the material is weak negative, "0" denotes it is neutral. As is same for the number [0,3].
+    * `Strength` is used to symbolize the strength of this material(range is [-3,3]), while `-3` denotes this material is    strong negative, `-2` denotes this material is negative, `-1` denotes the material is weak negative, "0" denotes it is neutral. As is same for the number [0,3].
     * `URL` is used to store the Hyperlink of this image.
 * Same for Phrases[] and Snippets[].
 
@@ -70,7 +70,7 @@ IDEA: Function to generate a List(LinkedList or ArrayList) that stores the mater
       Then use this list to generate HTML or Slide. <br><br>
 
 I Can write two or three templates in HTML,  and use `switch` key word to decide on which template it will utilize. <br>
-(In details, Use Math.random to generate number from 1 to 3, if number is 1,then go to `case 1:` which is a template)<br>
+(In details, Use `Math.random` to generate number from 1 to 3, if number is 1,then go to `case 1:` which is a template)<br>
 
 ### Template 
 #### Positive main point - positve picture - positive phrase - positive snipptes - Summary
