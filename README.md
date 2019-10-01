@@ -49,20 +49,20 @@ Object includes all the information related to it / pictures ,parses will be obj
 * Pictures
   * `Pictures[]` is a array that stores images with attributes:
     * `ImageID` is used for querying it.
-    * `Strength` is used to symbolize the strength of this material(range is [-3,3]), while `-3` denotes this material is    strong negative, `-2` denotes this material is negative, `-1` denotes the material is weak negative, "0" denotes it is neutral. As is same for the number [0,3].
+    * `Strength` is used to symbolize the strength of this material(range is [-3,3]), while `-3` denotes this material is    strong negative, `-2` denotes this material is negative, `-1` denotes the material is weak negative, `0` denotes it is neutral. As is same for the number [0,3].
     * `PointTo` is used to denote which argument this image is pointed to, such as Price, Benefits, etc.
     * `URL` is used to store the Hyperlink of this image.
 * Phrases
   * `Phrases[]` is a array that stores phrase with attributes:
     * `PhraseID` is used for querying it.
-    * `Strength` is used to symbolize the strength of this material(range is [-3,3]), while `-3` denotes this material is strong negative, `-2` denotes this material is negative, `-1` denotes the material is weak negative, "0" denotes it is neutral. As is same for the number [0,3]. 
+    * `Strength` is used to symbolize the strength of this material(range is [-3,3]), while `-3` denotes this material is strong negative, `-2` denotes this material is negative, `-1` denotes the material is weak negative, `0` denotes it is neutral. As is same for the number [0,3]. 
     * `Content` is used to store the text of this phrase.
     * `Type` is used to denote the type of this phrase, such as MP(Main Point),P(Point),Sum(Summary).
     * `PointTo` is used to denote which argument this phrase is pointed to, such as Price, Benefits, etc. Especially for Point Type.
 * Snippets
   * `Snippets[]` is a array that stores snippets with attributes:
     * `SnippetID` is used for querying it.
-    * `Strength` is used to symbolize the strength of this material(range is [-3,3]), while `-3` denotes this material is strong negative, `-2` denotes this material is negative, `-1` denotes the material is weak negative, "0" denotes it is neutral. As is same for the number [0,3]. 
+    * `Strength` is used to symbolize the strength of this material(range is [-3,3]), while `-3` denotes this material is strong negative, `-2` denotes this material is negative, `-1` denotes the material is weak negative, `0` denotes it is neutral. As is same for the number [0,3]. 
     * `Content` is used to store the text of this snippet.
     * `Type` is used to denote the type of this snippet, such as Reason(RS), Example(EX),etc.
     * `PointTo` is used to denote which argument this snippet is pointed to, such as Price, Benefits, etc.
@@ -118,7 +118,7 @@ Each material will be a Object. They will be saved in three document, Pictures.j
 * Pictures
   * `Pictures[]` is a array that stores images with attributes:
     * `ID` is used for querying it.
-    * `Strength` is used to symbolize the strength of this material(range is [-3,3]), while `-3` denotes this material is strong negative, `-2` denotes this material is negative, `-1` denotes the material is weak negative, "0" denotes it is neutral. As is same for the number [0,3].
+    * `Strength` is used to symbolize the strength of this material(range is [-3,3]), while `-3` denotes this material is strong negative, `-2` denotes this material is negative, `-1` denotes the material is weak negative, `0` denotes it is neutral. As is same for the number [0,3].
     * `LinkTo` denotes the thing which this image is linked to ,such as tomoto,potato,etc.
     * `PointTo` is used to denote which argument this image is pointed to, such as Price, Benefits, etc.
     * `URL` is used to store the Hyperlink of this image.
