@@ -23,7 +23,7 @@ Object includes all the information related to it / pictures ,parses will be obj
   "Pictures":[
   {"ImageID": int,
    "Strength": int,
-   "PointTo": String
+   "PointTo": String,
    "URL": String
   }],
   "Phrases":[{
@@ -36,7 +36,7 @@ Object includes all the information related to it / pictures ,parses will be obj
   "Snippets":[{
   "SinppetID": int,
   "Strength": int,
-  "Content": String
+  "Content": String,
   "Type": String,
   "PointTo": String
   }]
