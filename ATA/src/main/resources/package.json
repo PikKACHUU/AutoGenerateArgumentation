@@ -1,0 +1,19 @@
+{
+  "name": "ata",
+  "version": "1.0.0",
+  "dependencies": {
+
+  },
+  "main": "ATA.java",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PikKACHUU/AutoGenerateArgumentation"
+  },
+  "keywords": [
+    "persuasive-technology",
+    "json",
+    "java",
+    "HTML"
+  ],
+  "author":"JMao"
+}
