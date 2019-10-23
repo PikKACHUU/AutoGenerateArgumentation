@@ -44,24 +44,24 @@ Object includes all the information related to it / pictures ,parses will be obj
   ```
 
 * general object
-  * `ObjectName` is marked for the Name of the Object such as Tomoto.
-  * `ObjectID` is used for querying it.(AS Math.random a number to select which object will be utilized.) 
+  * `ObjectName` is marked for the Name of the Object such as Tomato.
+  * `ObjectID` is used to query it.(AS Math.random a number to select which object will be utilized.) 
 * Pictures
   * `Pictures[]` is a array that stores images with attributes:
-    * `ImageID` is used for querying it.
+    * `ImageID` is used to query it.
     * `Strength` is used to symbolize the strength of this material(range is [-3,3]), while `-3` denotes this material is    strong negative, `-2` denotes this material is negative, `-1` denotes the material is weak negative, `0` denotes it is neutral. As is same for the number [0,3].
     * `PointTo` is used to denote which argument this image is pointed to, such as Price, Benefits, etc.
     * `URL` is used to store the Hyperlink of this image.
 * Phrases
   * `Phrases[]` is a array that stores phrase with attributes:
-    * `PhraseID` is used for querying it.
+    * `PhraseID` is used to query it.
     * `Strength` is used to symbolize the strength of this material(range is [-3,3]), while `-3` denotes this material is strong negative, `-2` denotes this material is negative, `-1` denotes the material is weak negative, `0` denotes it is neutral. As is same for the number [0,3]. 
     * `Content` is used to store the text of this phrase.
     * `Type` is used to denote the type of this phrase, such as MP(Main Point),P(Point),Sum(Summary).
     * `PointTo` is used to denote which argument this phrase is pointed to, such as Price, Benefits, etc. Especially for Point Type.
 * Snippets
   * `Snippets[]` is a array that stores snippets with attributes:
-    * `SnippetID` is used for querying it.
+    * `SnippetID` is used to query it.
     * `Strength` is used to symbolize the strength of this material(range is [-3,3]), while `-3` denotes this material is strong negative, `-2` denotes this material is negative, `-1` denotes the material is weak negative, `0` denotes it is neutral. As is same for the number [0,3]. 
     * `Content` is used to store the text of this snippet.
     * `Type` is used to denote the type of this snippet, such as Reason(RS), Example(EX),etc.
