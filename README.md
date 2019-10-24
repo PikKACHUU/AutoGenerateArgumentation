@@ -2,6 +2,7 @@
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPikKACHUU%2FAutoGenerateArgumentation.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FPikKACHUU%2FAutoGenerateArgumentation?ref=badge_shield)
 [![](https://img.shields.io/github/followers/PikKACHUU.svg?style=social&label=Follow%20Me)](https://github.com/PikKACHUU)
 
+
 ## Design concept
 
 `Persuasive technology` is a relatively recent research area which studies the impact that digital interventions can have  on people's behaviour or beliefs.<br><br>
