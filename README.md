@@ -1,4 +1,6 @@
 # AutoGeneratePersuasivePresentation
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPikKACHUU%2FAutoGenerateArgumentation.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FPikKACHUU%2FAutoGenerateArgumentation?ref=badge_shield)
+
 
 ## Design concept
 
@@ -156,3 +158,7 @@ For example, `pMP` denotes positive Main Point , etc.
 
 Picture
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPikKACHUU%2FAutoGenerateArgumentation.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FPikKACHUU%2FAutoGenerateArgumentation?ref=badge_large)
