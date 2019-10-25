@@ -2,14 +2,14 @@ package ata;
 
 import java.util.ArrayList;
 
-public class AObject {
+public class Object {
     private String ObjectName;
     private int ObjectID;
     private ArrayList<Picture> Pictures;
     private ArrayList<Phrase> Phrases;
     private ArrayList<Snippet> Snippets;
 
-    public AObject(String ObjectName, int ObjectID, ArrayList<Picture> Pictures, ArrayList<Phrase> Phrases, ArrayList<Snippet> Snippets){
+    public Object(String ObjectName, int ObjectID, ArrayList<Picture> Pictures, ArrayList<Phrase> Phrases, ArrayList<Snippet> Snippets){
         super();
         this.ObjectName = ObjectName;
         this.ObjectID = ObjectID;

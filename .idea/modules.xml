@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ATA/ATA.iml" filepath="$PROJECT_DIR$/ATA/ATA.iml" />
       <module fileurl="file://$PROJECT_DIR$/AutoGenerateArgumentation.iml" filepath="$PROJECT_DIR$/AutoGenerateArgumentation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AutoGenerator/AutoGenerator.iml" filepath="$PROJECT_DIR$/AutoGenerator/AutoGenerator.iml" />
     </modules>
   </component>
 </project>
