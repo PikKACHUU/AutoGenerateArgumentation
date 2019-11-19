@@ -25,21 +25,24 @@ Object includes all the information related to it / pictures ,parses will be obj
   {"ImageID": int,
    "Strength": int,
    "PointTo": String,
-   "URL": String
+   "URL": String,
+   "Keywords":String[]
   }],
   "Phrases":[{
   "PhraseID": int,
   "Strength": int,
   "Content": String,
   "Type": String,
-  "PointTo": String
+  "PointTo": String,
+  "Keywords":String[]
   }],
   "Snippets":[{
   "SinppetID": int,
   "Strength": int,
   "Content": String,
   "Type": String,
-  "PointTo": String
+  "PointTo": String,
+  "Keywords":String[]
   }]
   }  
   ```
