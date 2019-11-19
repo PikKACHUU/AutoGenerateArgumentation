@@ -5,13 +5,15 @@ public class Picture {
     private int Strength;
     private String PointTo;
     private String URL;
+    private String[] KeyWords;
 
-    public Picture(int ImageID, int Strength, String PointTo, String URL){
+    public Picture(int ImageID, int Strength, String PointTo, String URL,  String[] KeyWords){
         super();
         this.ImageID = ImageID;
         this.Strength = Strength;
         this.PointTo = PointTo;
         this.URL = URL;
+        this.KeyWords = KeyWords;
     }
 
     public int getImageID() {
@@ -28,5 +30,9 @@ public class Picture {
 
     public String getURL() {
         return URL;
+    }
+
+    public String[] getKeyWords() {
+        return KeyWords;
     }
 }

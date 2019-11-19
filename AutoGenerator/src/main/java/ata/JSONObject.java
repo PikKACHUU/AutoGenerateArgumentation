@@ -8,7 +8,7 @@ public class JSONObject {
     private ArrayList<Picture> Pictures;
     private ArrayList<Phrase> Phrases;
     private ArrayList<Snippet> Snippets;
-
+    public JSONObject(Picture a){}
     public JSONObject(String ObjectName, int ObjectID, ArrayList<Picture> Pictures, ArrayList<Phrase> Phrases, ArrayList<Snippet> Snippets){
         super();
         this.ObjectName = ObjectName;

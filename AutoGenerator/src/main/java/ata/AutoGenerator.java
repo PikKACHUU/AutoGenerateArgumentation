@@ -9,7 +9,8 @@ import java.util.ArrayList;
 public class AutoGenerator  {
 private ArrayList<JSONObject> JSONObjects;
     public static void main(String[] args)  {
-       System.out.println("Hello world!");
+       JSONObject a = new JSONObject(null);
+        System.out.println("Hello world!");
     }
 
     public static void getJSONData(){

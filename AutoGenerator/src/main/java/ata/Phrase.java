@@ -6,14 +6,15 @@ public class Phrase {
     private String Content;
     private String Type;
     private String PointTo;
-
-    public Phrase(int PhraseID,int Strength, String Content, String Type, String PointTo){
+    private String[] KeyWords;
+    public Phrase(int PhraseID,int Strength, String Content, String Type, String PointTo, String[] KeyWords){
         super();
         this.PhraseID = PhraseID;
         this.Strength = Strength;
         this.Content = Content;
         this.Type = Type;
         this.PointTo = PointTo;
+        this.KeyWords = KeyWords;
     }
 
     public int getPhraseID() {
@@ -34,5 +35,9 @@ public class Phrase {
 
     public String getPointTo() {
         return PointTo;
+    }
+
+    public String[] getKeyWords() {
+        return KeyWords;
     }
 }
