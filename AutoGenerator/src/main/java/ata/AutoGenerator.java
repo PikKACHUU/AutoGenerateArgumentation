@@ -1,25 +1,75 @@
 package ata;
 
 
-import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.*;
+import org.jetbrains.annotations.NotNull;
+
 
 import java.io.*;
 import java.util.ArrayList;
 
 public class AutoGenerator  {
-private ArrayList<JSONObject> JSONObjects;
-    public static void main(String[] args)  {
-       JSONObject a = new JSONObject(null);
+private static ArrayList<Objects> Objects;
+public static void main(String[] args)  {
+        getJSONData();
         System.out.println("Hello world!");
     }
 
-    public static void getJSONData(){
-        String path = AutoGenerator.class.getClassLoader().getResource("src/main/java/resources/JSONDATA.json").getPath();
+    private AutoGenerator(){}
+// getJSONData() is method to transfer json string to Objects
+    private static void getJSONData() {
+        String ObjectName;
+        int ObjectID;
+        ArrayList<Picture> Pictures;
+        ArrayList<Phrase> Phrases ;
+        ArrayList<Snippet> Snippets;
+        String[] keywords;
+        String path = AutoGenerator.class.getClassLoader().getResource("JSONDATA.json").getPath();
         String stream = readJSON(path);
-        com.alibaba.fastjson.JSONObject obj = JSON.parseObject(stream);
+        JSONObject Jobj = JSON.parseObject(stream);
+        JSONArray JSONObjects = Jobj.getJSONArray("JSONObjects");
+        for(int i=0;i<JSONObjects.size();i++){
+            JSONObject object = (JSONObject) JSONObjects.get(0);
+            ObjectName = (String) object.get("ObjectName");
+            ObjectID = (int) object.get("ObjectID");
+            System.out.println("Object name " + ObjectName + " " + ObjectID);
+            JSONArray phrases = (JSONArray) object.getJSONArray("Phrases");
+            JSONArray pictures = (JSONArray) object.getJSONArray("Pictures");
+            JSONArray snippets = (JSONArray) object.getJSONArray("Snippets");
+            Phrases = new ArrayList<Phrase>();
+            Pictures = new ArrayList<Picture>();
+            Snippets = new ArrayList<Snippet>();
+            for(Object o : snippets){
+                JSONObject phrase =(JSONObject) o;
+                keywords = getKeyWords(phrase);
+                Phrases.add(new Phrase((int)phrase.get("PhraseID"),(int)phrase.get("Strength"),(String)phrase.get("Content"),(String)phrase.get("Type"),(String)phrase.get("PointTo"),keywords));
+            }
+            for (Object o : snippets) {
+                JSONObject snippet = (JSONObject) o;
+                keywords = getKeyWords(snippet);
+                Snippets.add(new Snippet((int) snippet.get("PhraseID"), (int) snippet.get("Strength"), (String) snippet.get("Content"), (String) snippet.get("Type"), (String) snippet.get("PointTo"), keywords));
+            }
+            for(Object o : pictures){
+                JSONObject picture =(JSONObject) o;
+                keywords = getKeyWords(picture);
+                Snippets.add(new Snippet((int)picture.get("PhraseID"),(int)picture.get("Strength"),(String)picture.get("Content"),(String)picture.get("Type"),(String)picture.get("PointTo"),keywords));
+            }
+            Objects.add(new Objects(ObjectName,ObjectID,Pictures,Phrases,Snippets));
+        }
+
     }
 
-    public static String readJSON(String fileName) {
+    @NotNull
+    private static String[] getKeyWords(JSONObject sample){
+        JSONArray KeyWords = sample.getJSONArray("KeyWords");
+        String[] keywords = new String[KeyWords.size()];
+        for(int k=0;k<keywords.length;k++){
+            keywords[k] = KeyWords.getString(k);
+        }
+        return keywords;
+    }
+
+    private static String readJSON(String fileName) {
         String JsonStr = "";
         try {
             File jsonFile = new File(fileName);
@@ -40,8 +90,8 @@ private ArrayList<JSONObject> JSONObjects;
         }
     }
 
-public ArrayList<Object> GeneratorOne(ArrayList<JSONObject> Objects){return null;}
-public ArrayList<Object> GeneratorTwo(ArrayList<JSONObject> Objects){return null;}
-public ArrayList<Object> GeneratorThree(ArrayList<JSONObject> Objects){return null;}
+public ArrayList<Object> GeneratorOne(ArrayList<Objects> Objects){return null;}
+public ArrayList<Object> GeneratorTwo(ArrayList<Objects> Objects){return null;}
+public ArrayList<Object> GeneratorThree(ArrayList<Objects> Objects){return null;}
 public void CreateSlidesByTemplate(ArrayList<Object> Material){}
 }

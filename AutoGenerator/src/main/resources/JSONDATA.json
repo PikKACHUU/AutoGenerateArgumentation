@@ -1,445 +1,724 @@
 {
   "JSONObjects": [
     {
-      "name": "sugar",
-      "displayName": "Sugar",
-      "alternateNames": ["glucose"],
-      "level": 1,
-      "explanation": "Sugar is not easily processed by a diabetic person's body. Too much sugar can cause high blood sugar (hyperglycemia) which can cause increased thirst, frequent urination, fatigue, nausea and vomiting, shortness of breath, stomach pain, fruity breath odor, a very dry mouth, rapid heartbeat, and diabetic coma.",
-      "suggestions": "Sugar is important for bodily function, but sugar intake should be carefully monitored to avoid high blood sugar (hyperglycemia) and low blood sugar (hypoglycemia).",
-      "ingredients": []
-    },
-    {
-      "name": "sport drinks",
-      "displayName": "Sport drinks",
-      "alternateNames": ["gatorade"],
-      "level": 1,
-      "explanation": "Sports drinks like Gatorade may be helpful for highly active, healthy people, but people with diabetes should steer clear—even if they hit the gym on the reg. They can be an unnecessary source of calories, added sugars, and sodium, which are all things people with diabetes should avoid.",
-      "suggestions": "Stay hydrated during your workout with cold H2O—it really is your best bet.",
-      "ingredients": ["sugar"]
-    },
-    {
-      "name": "nacho",
-      "displayName": "Nachos",
-      "alternateNames": [],
-      "level": 1,
-      "explanation": "Nachos are high in calories, carbohydrates, and fat.",
-      "suggestions": "Use reduced-fat cheese and baked tortilla chips. Eat as a meal, not an appetizer.",
-      "ingredients": []
-    },
-    {
-      "name": "coffee",
-      "displayName": "Coffee",
-      "alternateNames": ["starbucks"],
-      "level": 3,
-      "explanation": "Coffee drinks at places like Starbucks should be avoided as they are high in calories, carbohydrates, and fat. Coffee can be made in a healthier way, though.",
-      "suggestions": "Try a cup of coffee with a little skim milk.",
-      "ingredients": []
-    },
-    {
-      "name": "baked good",
-      "displayName": "Baked Goods",
-      "alternateNames": ["donut", "doughnut", "muffin", "pastry", "cake", "pie", "cinnamon roll", "cookie"],
-      "level": 1,
-      "explanation": "Baked goods are high in calories, carbohydrates, trans fat, and sugar.",
-      "suggestions": "Some baked goods can be made healthier by using rolled oats, cornmeal, whole grain, or wheat flour.",
-      "ingredients": []
-    },
-    {
-      "name": "battered fish",
-      "displayName": "Battered Fish",
-      "alternateNames": ["deep fried fish", "long john silvers", "captain ds"],
-      "level": 1,
-      "explanation": "Battered fish is high in calories, carbohydrates, and fat. It has too much starch.",
-      "suggestions": "",
-      "ingredients": []
-    },
-    {
-      "name": "canned vegetables",
-      "displayName": "Canned Vegetables",
-      "alternateNames": [],
-      "level": 4,
-      "explanation": "Canned vegetables are generally okay but can be high in sodium.",
-      "suggestions": "Opt for raw or frozen vegetables instead.",
-      "ingredients": []
-    },
-    {
-      "name": "biscuit and gravy",
-      "displayName": "Biscuits and Gravy",
-      "alternateNames": [],
-      "level": 1,
-      "explanation": "Biscuits and gravy are high in calories, saturated fat, and sodium.",
-      "suggestions": "",
-      "ingredients": []
-    },
-    {
-      "name": "cereal",
-      "displayName": "Cereal",
-      "alternateNames": ["breakfast cereal"],
-      "level": 3,
-      "explanation": "",
-      "suggestions": "Make sure it's made with whole grain and watch for added sugar.",
-      "ingredients": []
-    },
-    {
-      "name": "chinese",
-      "displayName": "Chinese Food",
-      "alternateNames": ["orange chicken", "white rice", "delivery chinese"],
-      "level": 2,
-      "explanation": "Many Chinese dishes are deep-fried and contain rice. These are high in calories and carbohydrates.",
-      "suggestions": "Avoid deep-fried entrees and rice. Dishes with no breading and a high vegetable proportion are okay.",
-      "ingredients": []
-    },
-    {
-      "name": "corn",
-      "displayName": "Corn",
-      "alternateNames": ["corn on the cob"],
-      "level": 1,
-      "explanation": "While corn is a vegetable, it is very starchy and high in carbohydrates.",
-      "suggestions": "Try other vegetables besides corn and potatoes.",
-      "ingredients": []
-    },
-    {
-      "name": "french fry",
-      "displayName": "French Fries",
-      "alternateNames": ["fry"],
-      "level": 1,
-      "explanation": "French fries are high in calories, saturated fat, and sodium.",
-      "suggestions": "",
-      "ingredients": []
-    },
-    {
-      "name": "fried chicken",
-      "displayName": "Fried Chicken",
-      "alternateNames": ["chicken", "kfc", "popeye", "church"],
-      "level": 1,
-      "explanation": "Fried chicken is high in calories, carbohydrates, and fat.",
-      "suggestions": "Try grilled chicken instead of fried.",
-      "ingredients": []
-    },
-    {
-      "name": "frozen meal",
-      "displayName": "Frozen Meals",
-      "alternateNames": ["tv dinner", "marie callender", "pot pie"],
-      "level": 1,
-      "explanation": "Frozen meals are often high in fat and sodium. Pot pies are a huge offender.",
-      "suggestions": "Meals cooked from scratch can be made much healthier than pre-packaged frozen meals.",
-      "ingredients": []
-    },
-    {
-      "name": "fruit juice",
-      "displayName": "Fruit Juice",
-      "alternateNames": ["juice", "orange juice", "apple juice", "grape juice"],
-      "level": 2,
-      "explanation": "Many packaged fruit juices are high in calories and sugar.",
-      "suggestions": "Read the label. Be especially aware of service size. You can squeeze your own juice for a healthier option.",
-      "ingredients": []
-    },
-    {
-      "name": "hamburger",
-      "displayName": "Hamburgers",
-      "alternateNames": ["cheeseburger", "burger"],
-      "level": 1,
-      "explanation": "Hamburgers are extremely high in saturated fat. Especially burgers from restaurants.",
-      "suggestions": "At restaurants, try to find healthier options by looking at any nutritional information they offer.",
-      "ingredients": []
-    },
-    {
-      "name": "lettuce",
-      "displayName": "Lettuce",
-      "alternateNames": ["iceberg", "romaine"],
-      "level": 5,
-      "explanation": "",
-      "suggestions": "Most lettuce is great for you. Perfer other types over iceberg, as it's low in nutrients.",
-      "ingredients": []
-    },
-    {
-      "name": "lunch meat",
-      "displayName": "Lunch Meat",
-      "alternateNames": ["deli meat", "sliced meat"],
-      "level": 1,
-      "explanation": "Pre-packed lunch meat is high in sodium.",
-      "suggestions": "Meat sliced at the deli department can be okay, but roasting and slicing your own meat at home with no added sodium is the best.",
-      "ingredients": []
-    },
-    {
-      "name": "milkshake",
-      "displayName": "Milkshake",
-      "alternateNames": ["shake", "malt", "milk shake"],
-      "level": 1,
-      "explanation": "Milkshakes are high in calories, trans fat, and sugar.",
-      "suggestions": "",
-      "ingredients": []
-    },
-    {
-      "name": "pickle",
-      "displayName": "Pickles",
-      "alternateNames": ["dill pickle"],
-      "level": 3,
-      "explanation": "Most pickles are very high in sodium.",
-      "suggestions": "",
-      "ingredients": []
-    },
-    {
-      "name": "Pizza",
-      "displayName": "Pizza",
-      "alternateNames": ["frozen pizza", "delivery pizza", "pizza hut", "dominos", "papa johns"],
-      "level": 1,
-      "explanation": "Pizza is often high in calories, carbohydrates, fat, and sodium.",
-      "suggestions": "If you must eat pizza, opt for vegetable toppings. Pay close attention to the nutritional content and the serving size.",
-      "ingredients": []
-    },
-    {
-      "name": "potato",
-      "displayName": "Potatoes",
-      "alternateNames": [],
-      "level": 1,
-      "explanation": "Potatoes are high in carbohydrates.",
-      "suggestions": "Try other vegetables besides potatoes and corn.",
-      "ingredients": []
-    },
-    {
-      "name": "processed grain",
-      "displayName": "Processed Grains",
-      "alternateNames": ["white rice", "white flour", "white bread"],
-      "level": 1,
-      "explanation": "Processed grains are high in carbohydrates.",
-      "suggestions": "Some items that are typically made with processed grains can be made healthier by using rolled oats, cornmeal, whole grain, or wheat flour.",
-      "ingredients": []
-    },
-    {
-      "name": "sauerkraut",
-      "displayName": "Sauerkraut",
-      "alternateNames": [],
-      "level": 3,
-      "explanation": "Sauerkraut is high in sodium.",
-      "suggestions": "",
-      "ingredients": []
-    },
-    {
-      "name": "smoothie",
-      "displayName": "Smoothies",
-      "alternateNames": ["smoothie king"],
-      "level": 2,
-      "explanation": "Many made to order smoothies and smoothie mixes contain hidden sugars.",
-      "suggestions": "Make your own smoothies with fresh fruit and no added sugar.",
-      "ingredients": []
-    },
-    {
-      "name": "Soda",
-      "displayName": "Soda",
-      "alternateNames": ["pop", "soft drink"],
-      "level": 1,
-      "explanation": "Sode is very high in sugar.",
-      "suggestions": "Try sparkling water with fruit. Diet soda can also be okay.",
-      "ingredients": []
-    },
-    {
-      "name": "sweet potato",
-      "displayName": "Sweet Potatoes",
-      "alternateNames": ["yam"],
-      "level": 5,
-      "explanation": "",
-      "suggestions": "Pay attention to serving size, added sugar, and added butter.",
-      "ingredients": []
-    },
-    {
-      "name": "tortilla",
-      "displayName": "Tortillas",
-      "alternateNames": [],
-      "level": 3,
-      "explanation": "",
-      "suggestions": "Tortillas made with whole grain are much healthier than with other processed grains.",
-      "ingredients": []
-    },
-    {
-      "name": "vegetable",
-      "displayName": "Vegetables",
-      "alternateNames": ["veg", "veggies", "carrots", "pea", "green bean", "kale", "spinach", "arugula", "pepper", "onion", "eggplant", "celery"],
-      "level": 5,
-      "explanation": "",
-      "suggestions": "Try vegetables raw, steamed, roasted, or grilled. Avoid added butter, cheese, or sauce.",
-      "ingredients": []
-    },
-    {
-      "name": "whole grain",
-      "displayName": "Whole Grains",
-      "alternateNames": ["brown rice", "oatmeal", "quinoa", "millet", "amaranth"],
-      "level": 5,
-      "explanation": "",
-      "suggestions": "Watch out for added sugar.",
-      "ingredients": []
-    },
-    {
-      "name": "grilled chicken",
-      "displayName": "Grilled Chicken",
-      "alternateNames": ["chicken"],
-      "level": 4,
-      "explanation": "",
-      "suggestions": "Grilled is much healthier than frying chicken.",
-      "ingredients": []
-    },
-    {
-      "name": "sushi",
-      "displayName": "Sushi",
-      "alternateNames": ["sashimi", "california roll"],
-      "level": 2,
-      "explanation": "Most sushi dishes contain a lot of short-grain sticky white rice, which is very high in carbohydrates and should be avoided.",
-      "suggestions": "Try rolls made with quinoa, brown rice, lean proteins like fish, and healthy fats like avocado. Avoid deep-fried rolls. Opt for low-sodium soy sauce and watch out for added sugar.",
-      "ingredients": []
-    },
-    {
-      "name": "taco bell",
-      "displayName": "Taco Bell",
-      "alternateNames": ["fast food", "mexican", "taco", "burrito", "quesadilla"],
-      "level": 1,
-      "explanation": "Fast food restaurants very rarely offer healthy options. However, some are better than others.",
-      "suggestions": "Opt for a black bean burrito, soft chicken tacos, or a fresco grilled steak soft taco.",
-      "ingredients": []
-    },
-    {
-      "name": "wendy",
-      "displayName": "Wendy's",
-      "alternateNames": ["fast food", "burger"],
-      "level": 1,
-      "explanation": "Fast food restaurants very rarely offer healthy options. However, some are better than others.",
-      "suggestions": "Try a grilled chicken sandwich, power mediterranian chicken salad, or apple pecan chicken salad.",
-      "ingredients": []
-    },
-    {
-      "name": "burger king",
-      "displayName": "Burger King",
-      "alternateNames": ["fast food", "burger"],
-      "level": 1,
-      "explanation": "Fast food restaurants very rarely offer healthy options. However, some are better than others.",
-      "suggestions": "A basic burger with no mayonnaise or a salad are better options.",
-      "ingredients": []
-    },
-    {
-      "name": "subway",
-      "displayName": "Subway",
-      "alternateNames": ["fast food", "sandwich"],
-      "level": 1,
-      "explanation": "Fast food restaurants very rarely offer healthy options. However, some are better than others.",
-      "suggestions": "Opt for a 6 inch sandwich on honey oat or 9 grain bread, veggie delight, oven roasted/rotisserie chicken, or roast beef.",
-      "ingredients": []
-    },
-    {
-      "name": "arby",
-      "displayName": "Arby's",
-      "alternateNames": ["fast food", "roast beef"],
-      "level": 1,
-      "explanation": "Fast food restaurants very rarely offer healthy options. However, some are better than others.",
-      "suggestions": "Try a classic roast beef or turkey gyro pita wrap.",
-      "ingredients": []
-    },
-    {
-      "name": "mcdonald",
-      "displayName": "McDonald's",
-      "alternateNames": ["fast food", "burger"],
-      "level": 1,
-      "explanation": "Fast food restaurants very rarely offer healthy options. However, some are better than others.",
-      "suggestions": "A basic burger, side salad with baslamic dressing, apple slices, and unsweetened tea are some healtheir options.",
-      "ingredients": []
-    },
-    {
-      "name": "kfc",
-      "displayName": "KFC",
-      "alternateNames": ["fast food", "chicken", "kentucky", "fried"],
-      "level": 1,
-      "explanation": "Fast food restaurants very rarely offer healthy options. However, some are better than others.",
-      "suggestions": "Opt for grilled or baked chicken and sweet kernel corn over other options.",
-      "ingredients": []
-    },
-    {
-      "name": "chipotle",
-      "displayName": "Chipotle",
-      "alternateNames": ["fast food", "mexican", "taco", "burrito"],
-      "level": 1,
-      "explanation": "Fast food restaurants very rarely offer healthy options. However, some are better than others.",
-      "suggestions": "Try a vegetarian or chicken bowl, crispy tacos with chicken, or brown rice.",
-      "ingredients": []
-    },
-    {
-      "name": "chick fil a",
-      "displayName": "Chick-fil-A",
-      "alternateNames": ["fast food", "chicken"],
-      "level": 1,
-      "explanation": "Fast food restaurants very rarely offer healthy options. However, some are better than others.",
-      "suggestions": "A grilled chicken sandwich, small fruit cup, and unsweetened iced tea are healtheir options.",
-      "ingredients": []
-    },
-    {
-      "name": "jimmy john",
-      "displayName": "Jimmy John's",
-      "alternateNames": ["fast food", "sandwich"],
-      "level": 1,
-      "explanation": "Fast food restaurants very rarely offer healthy options. However, some are better than others.",
-      "suggestions": "Try the #1, Pepe un-wich style with no mayonnaise and thinny chips.",
-      "ingredients": []
-    },
-    {
-      "name": "panera",
-      "displayName": "Panera Bread Co.",
-      "alternateNames": ["fast food", "bread", "soup", "bagel", "sandwich", "st. louis", "saint"],
-      "level": 1,
-      "explanation": "Fast food restaurants very rarely offer healthy options. However, some are better than others.",
-      "suggestions": "Opt for a you pick two with half-smoked turkey breast on honey wheat loaf with low-fat garden vegetable with pesto soup, and acai berry iced green tea.",
-      "ingredients": []
-    },
-    {
-      "name": "popeye",
-      "displayName": "Popeye's",
-      "alternateNames": ["fast food", "chicken", "fried"],
-      "level": 1,
-      "explanation": "Fast food restaurants very rarely offer healthy options. However, some are better than others.",
-      "suggestions": "The six-piece chicken tenders, regular green beans, and applesauce are healthier options.",
-      "ingredients": []
-    },
-    {
-      "name": "qdoba",
-      "displayName": "Qdoba",
-      "alternateNames": ["fast food", "mexican", "taco", "burrito"],
-      "level": 1,
-      "explanation": "Fast food restaurants very rarely offer healthy options. However, some are better than others.",
-      "suggestions": "Try a naked burrito, pulled pork, pinto beans, lettuce, fajita vegetables, and mango salsa.",
-      "ingredients": []
-    },
-    {
-      "name": "starbuck",
-      "displayName": "Starbucks",
-      "alternateNames": ["fast food", "coffee"],
-      "level": 1,
-      "explanation": "Fast food restaurants very rarely offer healthy options. However, some are better than others.",
-      "suggestions": "Opt for a spinach and feta breakfast wrap. Black coffee is healthier than all of the sugary drinks they offer.",
-      "ingredients": []
-    },
-    {
-      "name": "panda express",
-      "displayName": "Panda Express",
-      "alternateNames": ["fast food", "chinese"],
-      "level": 1,
-      "explanation": "Fast food restaurants very rarely offer healthy options. However, some are better than others.",
-      "suggestions": "Broccoli beef (no rice) and veggie spring rolls are healthier options.",
-      "ingredients": []
-    },
-    {
-      "name": "carrots",
-      "displayName": "Carrots",
-      "alternateNames": ["vegetable", "healthy"],
-      "level": 1,
-      "explanation": "Carrots are full of water and vitamins are a very healthy options.They help with eyes and stomach issues.",
-      "suggestions": "Apples and Carrots mix or soups with carrots in are very healthy.",
-      "ingredients": []
-    },
-    {
-      "name": "lentil",
-      "displayName": "Lentil",
-      "alternateNames": ["lentil soup", "lentils"],
-      "level":4,
-      "explanation":"Lentils are a high-protein, high-fiber member of the legume famiy. An excellent natural source of folate and manganese.",
-      "suggestions":"",
-      "ingredients":[]
+      "ObjectName": "tomato",
+      "ObjectID": 1,
+      "Pictures": [
+        {
+          "ImageID": 1,
+          "Strength": 0,
+          "PointTo": "feature",
+          "URL": "../resources/images/tomato1",
+          "Keywords": [
+            "red",
+            "vegetable"
+          ]
+        },
+        {
+          "ImageID": 2,
+          "Strength": -2,
+          "PointTo": "feature",
+          "URL": "../resources/images/tomato2",
+          "Keywords": [
+            "musty",
+            "toxic"
+          ]
+        },
+        {
+          "ImageID": 3,
+          "Strength": 1,
+          "PointTo": "cuisine",
+          "URL": "../resources/images/tomato3",
+          "Keywords": [
+            "soup"
+          ]
+        },
+        {
+          "ImageID": 4,
+          "Strength": 0,
+          "PointTo": "cuisine",
+          "URL": "../resources/images/tomato4",
+          "Keywords": [
+            "grill"
+          ]
+        },
+        {
+          "ImageID": 5,
+          "Strength": -1,
+          "PointTo": "cuisine",
+          "URL": "../resources/images/tomato5",
+          "Keywords": [
+            "grill",
+            "oily",
+            "harmful"
+          ]
+        },
+        {
+          "ImageID": 6,
+          "Strength": 2,
+          "PointTo": "nutrition",
+          "URL": "../resources/images/tomato6",
+          "Keywords": [
+            "nutritious"
+          ]
+        },
+        {
+          "ImageID": 7,
+          "Strength": 1,
+          "PointTo": "nutrition",
+          "URL": "../resources/images/tomato7",
+          "Keywords": [
+            "nutritious"
+          ]
+        },
+        {
+          "ImageID": 8,
+          "Strength": 1,
+          "PointTo": "cuisine",
+          "URL": "../resources/images/tomato8",
+          "Keywords": [
+            "soup"
+          ]
+        },
+        {
+          "ImageID": 9,
+          "Strength": 1,
+          "PointTo": "cuisine",
+          "URL": "../resources/images/tomato9",
+          "Keywords": [
+            "soup"
+          ]
+        },
+        {
+          "ImageID": 10,
+          "Strength": -2,
+          "PointTo": "feature",
+          "URL": "../resources/images/tomato10",
+          "Keywords": [
+            "musty"
+          ]
+        },
+        {
+          "ImageID": 11,
+          "Strength": -1,
+          "PointTo": "cuisine",
+          "URL": "../resources/images/tomato11",
+          "Keywords": [
+            "grill"
+          ]
+        },
+        {
+          "ImageID": 12,
+          "Strength": 2,
+          "PointTo": "cuisine",
+          "URL": "../resources/images/tomato12",
+          "Keywords": [
+            "salad"
+          ]
+        },
+        {
+          "ImageID": 13,
+          "Strength": 2,
+          "PointTo": "cuisine",
+          "URL": "../resources/images/tomato13",
+          "Keywords": [
+            "salad"
+          ]
+        },
+        {
+          "ImageID": 14,
+          "Strength": 2,
+          "PointTo": "cuisine",
+          "URL": "../resources/images/tomato14",
+          "Keywords": [
+            "salad"
+          ]
+        },
+        {
+          "ImageID": 15,
+          "Strength": 0,
+          "PointTo": "feature",
+          "URL": "../resources/images/tomato15",
+          "Keywords": [
+            "red",
+            "vegetable"
+          ]
+        },
+        {
+          "ImageID": 16,
+          "Strength": 0,
+          "PointTo": "feature",
+          "URL": "../resources/images/tomato16",
+          "Keywords": [
+            "red",
+            "vegetable"
+          ]
+        }
+      ],
+      "Phrases": [
+        {
+          "PhraseID": 1,
+          "Strength": 3,
+          "Content": "Tomato is very good for health",
+          "Type": "Main-point",
+          "PointTo": "benefit",
+          "Keywords": [
+            "nutritious",
+            "vitaminC",
+            "low-calories",
+            "vitaminK"
+          ]
+        },
+        {
+          "PhraseID": 2,
+          "Strength": 1,
+          "Content": "Tomato is used in many ways, such as raw in salads or in slices, stewed, a part of a wide variety of dishes, or processed into ketchup or tomato soup",
+          "Type": "Main-point",
+          "PointTo": "cuisine",
+          "Keywords": [
+            "salad",
+            "grill",
+            "soup",
+            "fry"
+          ]
+        },
+        {
+          "PhraseID": 3,
+          "Strength": 0,
+          "Content": "To avoid deterioration, tomato should be well stored",
+          "Type": "Main-point",
+          "PointTo": "storage",
+          "Keywords": [
+            "musty",
+            "sliced",
+            "outside",
+            "freezer"
+          ]
+        },
+        {
+          "PhraseID": 4,
+          "Strength": 2,
+          "Content": "After freezing or refrigerating a tomato, it is best to cook with the tomato in a way that masks the change in its texture",
+          "Type": "viewpoint",
+          "PointTo": "cuisine",
+          "Keywords": [
+            "freezer",
+            "fry"
+          ]
+        },
+        {
+          "PhraseID": 5,
+          "Strength": 0,
+          "Content": "There are many ways to cook tomato, such as grilling,frying .etc ",
+          "Type": "Main-point",
+          "PointTo": "cuisine",
+          "Keywords": [
+            "salad",
+            "salsa",
+            "soup",
+            "grill"
+          ]
+        },
+        {
+          "PhraseID": 6,
+          "Strength": 0,
+          "Content": "Tomato can be cooked in many methods, such as grilling,frying .etc ",
+          "Type": "Main-point",
+          "PointTo": "cuisine",
+          "Keywords": [
+            "salad",
+            "salsa",
+            "soup",
+            "grill",
+            "sliced"
+          ]
+        },
+        {
+          "PhraseID": 7,
+          "Strength": 1,
+          "Content": "Soup is one of the best way to enjoy the tomato",
+          "Type": "viewpoint",
+          "PointTo": "cuisine",
+          "Keywords": [
+            "soup",
+            "sliced"
+          ]
+        },
+        {
+          "PhraseID": 8,
+          "Strength": 1,
+          "Content": "Salad is one of the best way to enjoy the tomato",
+          "Type": "viewpoint",
+          "PointTo": "cuisine",
+          "Keywords": [
+            "salad",
+            "sliced"
+          ]
+        },
+        {
+          "PhraseID": 9,
+          "Strength": 0,
+          "Content": "The tomato is consumed in diverse ways, raw or cooked, in many dishes, sauces, salads, and drinks",
+          "Type": "Main-point",
+          "PointTo": "cuisine",
+          "Keywords": [
+            "salad",
+            "salsa",
+            "soup",
+            "sliced"
+          ]
+        },
+        {
+          "PhraseID": 10,
+          "Strength": 1,
+          "Content": "Tomato contains lots of vitamin, such as vitamin C and Vitamin K",
+          "Type": "viewpoint",
+          "PointTo": "benefit",
+          "Keywords": [
+            "vitaminC",
+            "vitaminK"
+          ]
+        },
+        {
+          "PhraseID": 11,
+          "Strength": 1,
+          "Content": "Tomatoes are a good source of several vitamins and minerals, such as vitamin C, potassium, vitamin K, and folate.",
+          "Type": "viewpoint",
+          "PointTo": "benefit",
+          "Keywords": [
+            "vitaminC",
+            "vitaminK"
+          ]
+        },
+        {
+          "PhraseID": 12,
+          "Strength": 1,
+          "Content": "Tomatoes are one of the low-calorie vegetables;hold just 18 calories per 100g",
+          "Type": "viewpoint",
+          "PointTo": "benefit",
+          "Keywords": [
+            "low-calorie"
+          ]
+        },
+        {
+          "PhraseID": 13,
+          "Strength": 3,
+          "Content": "Tomato can take several benefits for your physical fitness.",
+          "Type": "Main-point",
+          "PointTo": "benefit",
+          "Keywords": [
+            "vitaminC",
+            "low-calories",
+            "vitaminK"
+          ]
+        },
+        {
+          "PhraseID": 14,
+          "Strength": 3,
+          "Content": "Tomato is a good choice for person who wants to intake vitaminC and vitaminK ",
+          "Type": "viewpoint",
+          "PointTo": "benefit",
+          "Keywords": [
+            "vitaminC",
+            "vitaminK"
+          ]
+        },
+        {
+          "PhraseID": 15,
+          "Strength": -2,
+          "Content": "Spoiled tomato is bad for health",
+          "Type": "Main-point",
+          "PointTo": "side-effect",
+          "Keywords": [
+            "musty",
+            "toxic",
+            "mould",
+            "bacteria",
+            "method"
+          ]
+        },
+        {
+          "PhraseID": 16,
+          "Strength": -1,
+          "Content": "There are several way to differentiate between good tomato and spoiled tomato",
+          "Type": "viewpoint",
+          "PointTo": "side-effect",
+          "Keywords": [
+            "method"
+          ]
+        },
+        {
+          "PhraseID": 17,
+          "Strength": -1,
+          "Content": "Spoiled tomato contains harmful substance which is fatal for human health such as bacteria and mould",
+          "Type": "viewpoint",
+          "PointTo": "side-effect",
+          "Keywords": [
+            "toxic",
+            "mould",
+            "bacteria",
+            "method",
+            "musty"
+          ]
+        },
+        {
+          "PhraseID": 18,
+          "Strength": -1,
+          "Content": "There are several poisonous substances in spoiled tomato such as mould and bacteria",
+          "Type": "Main-point",
+          "PointTo": "benefit",
+          "Keywords": [
+            "toxic",
+            "mould",
+            "bacteria",
+            "method",
+            "musty"
+          ]
+        },
+        {
+          "PhraseID": 19,
+          "Strength": 1,
+          "Content": "Salsa is one of the best way to enjoy the tomato",
+          "Type": "viewpoint",
+          "PointTo": "cuisine",
+          "Keywords": [
+            "salsa",
+            "sliced"
+          ]
+        },
+        {
+          "PhraseID": 20,
+          "Strength": 1,
+          "Content": "grill is one of the best way to enjoy the tomato",
+          "Type": "viewpoint",
+          "PointTo": "cuisine",
+          "Keywords": [
+            "grill",
+            "sliced"
+          ]
+        }
+      ],
+      "Snippets": [
+        {
+          "SinppetID": 1,
+          "Strength": 0,
+          "Content": "The tomato is an herbaceous, usually sprawling plant in the nightshade family that is typically cultivated for its edible fruit. It is a perennial but is usually grown outdoors in temperate climates as an annual. Tomatoes are the most common and beloved vegetable crop for home gardeners.",
+          "Type": "definition",
+          "PointTo": "feature",
+          "Keywords": [
+            "vegetable"
+          ]
+        },
+        {
+          "SinppetID": 2,
+          "Strength": 0,
+          "Content": "A member of the nightshade family (along with aubergines, peppers and chillies), tomatoes are in fact a fruit, but their affinity for other savoury ingredients means that they are usually classed as a vegetable.",
+          "Type": "definition",
+          "PointTo": "feature",
+          "Keywords": [
+            "vegetable"
+          ]
+        },
+        {
+          "SinppetID": 3,
+          "Strength": 1,
+          "Content": "Chilling tomatoes mutes their flavour so, unless they are very ripe, they should be stored at room temperature. If you won't be eating ripe tomatoes for a couple of days, put them in the fridge in a perforated bag, but take them out of the fridge for about 30 minutes before eating, so that they can warm up. If you don't use a tin of tomatoes all in one go, transfer the remainder to a non-metal, airtight container and store in the fridge - it will last for around two days.",
+          "Type": "explanation",
+          "PointTo": "storage",
+          "Keywords": [
+            "method",
+            "outside",
+            "freezer"
+          ]
+        },
+        {
+          "SinppetID": 4,
+          "Strength": 1,
+          "Content": "Store the halved tomato in a cool, clean, place. If you are not going to refrigerate your tomato and will be able to eat it within 24 hours, it is important to find a clean, cool place in your kitchen to store it. Never put cut tomatoes above a stove, under a sink, or any place prone to high or low temperatures.",
+          "Type": "explanation",
+          "PointTo": "storage",
+          "Keywords": [
+            "sliced",
+            "outside",
+            "method"
+          ]
+        },
+        {
+          "SinppetID": 5,
+          "Strength": 1,
+          "Content": "Cover the cut side of the tomato with plastic wrap. If you are not going to store the tomato for long, and plan to use the rest of the tomato for another meal in the same day, you can cover the vulnerable side of the tomato without it going bad. Place the plastic wrap on a clean counter, set the cut side of the tomato down, and wrap it in the plastic wrap.",
+          "Type": "explanation",
+          "PointTo": "storage",
+          "Keywords": [
+            "sliced",
+            "outside",
+            "method"
+          ]
+        },
+        {
+          "SinppetID": 6,
+          "Strength": 1,
+          "Content": "Place the tomato cut-side down on a plate. Leave the plated tomato in a cool, clean place in your kitchen. You can also lay a paper towel down on a plate, and set the tomato cut-side down on the paper towel",
+          "Type": "explanation",
+          "PointTo": "storage",
+          "Keywords": [
+            "sliced",
+            "outside",
+            "method"
+          ]
+        },
+        {
+          "SinppetID": 7,
+          "Strength": 1,
+          "Content": "Cover the other side of the tomato with a paper towel. With the cut-side of the tomato down on the plate, lay another paper towel over the skin-side. This will keep the tomato from collecting bacteria and drying out. It will also allow the tomato to keep its natural color and texture for at least one day.",
+          "Type": "explanation",
+          "PointTo": "storage",
+          "Keywords": [
+            "sliced",
+            "outside",
+            "method"
+          ]
+        },
+        {
+          "SinppetID": 8,
+          "Strength": 1,
+          "Content": "Place the halved tomato in an airtight storage container and leave it out. If you have airtight tupperware containers, place a paper towel at the bottom of the container and set the halved tomato down cut-side down. Leave the container in a cool place for one day, or until you want to use it for another meal.",
+          "Type": "explanation",
+          "PointTo": "storage",
+          "Keywords": [
+            "sliced",
+            "outside",
+            "method"
+          ]
+        },
+        {
+          "SinppetID": 9,
+          "Strength": 1,
+          "Content": "Refrigerate the tomato if you cannot eat it in a single day. Although refrigerating halved tomatoes can alter the texture and taste of the tomato, refrigeration is the only way to keep a halved tomato from going bad too quickly. Wrap the halved tomato in plastic wrap and place it in the refrigerator for three to four days.",
+          "Type": "explanation",
+          "PointTo": "storage",
+          "Keywords": [
+            "sliced",
+            "freezer",
+            "method"
+          ]
+        },
+        {
+          "SinppetID": 10,
+          "Strength": 1,
+          "Content": "Place chopped tomato in a storage container in the fridge. Unlike a halved tomato, chopped tomato must always be kept in an airtight container and refrigerated. Chopped or diced tomatoes are more vulnerable and susceptible to foodborne illness, such as salmonella, and must be protected and refrigerated as quickly as possible.",
+          "Type": "explanation",
+          "PointTo": "storage",
+          "Keywords": [
+            "sliced",
+            "freezer",
+            "method"
+          ]
+        },
+        {
+          "SinppetID": 11,
+          "Strength": 1,
+          "Content": "Freeze chopped or halved tomatoes to save them for longer than three to four days. Cover the exposed side of the tomato and place it in an airtight container. Although freezing tomatoes will alter the texture and taste of the tomato, freezing it will keep it from going bad for up to two months.",
+          "Type": "explanation",
+          "PointTo": "storage",
+          "Keywords": [
+            "sliced",
+            "freezer",
+            "method"
+          ]
+        },
+        {
+          "SinppetID": 12,
+          "Strength": 0,
+          "Content": "Cooking with the tomato, perhaps by creating a pasta sauce or baking it in the oven with olive oil for a salad, will mask the fact that the tomato has been refrigerated.",
+          "Type": "explanation",
+          "PointTo": "cuisine",
+          "Keywords": [
+            "freezer",
+            "fry"
+          ]
+        },
+        {
+          "SinppetID": 13,
+          "Strength": 0,
+          "Content": "Turn the diced tomato into a salsa. Use the chopped tomato to create your favorite kind of salsa, adding lemon or vinegar to acidify the tomato. By adding these acidic ingredients to a salsa, you will keep the tomato’s pH level below 4.2, which is what the FDA suggests",
+          "Type": "explanation",
+          "PointTo": "cuisine",
+          "Keywords": [
+            "salsa",
+            "sliced"
+          ]
+        },
+        {
+          "SinppetID": 14,
+          "Strength": 0,
+          "Content": "Marinate the tomato with salad dressing. Place the chopped tomato in a container and add your favorite lemon or vinegar-based salad dressing. These ingredients will keep the tomato from spoiling. You can keep the tomato and salad dressing together for two to three days, but you should try to eat the tomato as soon as you can.",
+          "Type": "explanation",
+          "PointTo": "cuisine",
+          "Keywords": [
+            "salad",
+            "sliced"
+          ]
+        },
+        {
+          "SinppetID": 15,
+          "Strength": 0,
+          "Content": "We start by dividing the tomatoes in half and removing the pulp and seeds. To this juicy goodness, we add olive oil, fresh herbs, salt, pepper, and balsamic vinegar. We opt for a fresh bay leaf and white balsamic, but you can sub in your favorites with abandon. We mash this up, then grill our tomatoes skin-side up over medium heat. We flip them, add the pulpy mixture, and sprinkle those tomatoes with sugar to ensure sweetly balanced flavor. Then we just let them cook slowly until they look exactly the way we like them. Served as is or sprinkled with parmesan cheese or other toppings, these tomatoes taste amazing alongside grilled steak or chicken, or with a simple summer pasta dish. ",
+          "Type": "explanation",
+          "PointTo": "cuisine",
+          "Keywords": [
+            "grill",
+            "sliced"
+          ]
+        },
+        {
+          "SinppetID": 16,
+          "Strength": 0,
+          "Content": "Heat the oil in a large saucepan and add the onions, carrot and celery and garlic. Cover and cook gently for 10 minutes until soft.Then,Add the sugar, salt, pepper and tomatoes. Stir and cook for another 5 minutes. Finally, Add the stock, bring to the boil and simmer for 10 minutes. Liquidise until smooth. If using the basil, stir in at the end.",
+          "Type": "explanation",
+          "PointTo": "cuisine",
+          "Keywords": [
+            "soup",
+            "sliced"
+          ]
+        },
+        {
+          "SinppetID": 17,
+          "Strength": 0,
+          "Content": "To create a delicious salad, mix cherry or grape tomatoes with blanched green beans, chopped sweet peppers and broccoli florets. To make a simple tangy vinaigrette, whisk pesto with freshly squeezed lemon juice. Drizzle over salad and toss to coat.",
+          "Type": "explanation",
+          "PointTo": "cuisine",
+          "Keywords": [
+            "salad",
+            "sliced"
+          ]
+        },
+        {
+          "SinppetID": 18,
+          "Strength": 0,
+          "Content": "Tomato, flowering plant of the nightshade family , cultivated extensively for its edible fruits. Labelled as a vegetable for nutritional purposes, tomatoes are a good source of vitamin C and the phytochemical lycopene. Additionally, a large percentage of the world’s tomato crop is used for processing; products include canned tomatoes, tomato juice, ketchup, puree, paste, and “sun-dried” tomatoes or dehydrated pulp.",
+          "Type": "definition",
+          "PointTo": "feature",
+          "Keywords": [
+            "red"
+          ]
+        },
+        {
+          "SinppetID": 19,
+          "Strength": 2,
+          "Content": "Vitamin C is a water-soluble vitamin and powerful antioxidant, and helps the body form and maintain connective tissue, including bones, blood vessels, and skin. Research also indicates that it may help protect against a variety of cancers by combatting free radicals and helping neutralize the effects of nitrites. The health benefits of vitamin K include a healthy heart, prevention of osteoporosis, relief from menstrual pain, reduced risk of cancer, protection from internal bleeding, prevention of biliary obstruction, and reduced menstrual flow.",
+          "Type": "explanation",
+          "PointTo": "benefit",
+          "Keywords": [
+            "vitaminC",
+            "vitaminK"
+          ]
+        },
+        {
+          "SnippetID": 20,
+          "Strength": 2,
+          "Content": "Vitamin K is needed for blood clotting, which means it helps wounds heal properly. There's also some evidence vitamin K may help keep bones healthy. Vitamin C, or ascorbic acid, is one of the most important vitamins for immune health, aiding in the prevention of colds and other infections. Having a vitamin C deficiency is a well known cause of scurvy, which is normally associated with sailors being at sea for long periods of time.",
+          "Type": "explanation",
+          "PointTo": "benefit",
+          "Keywords": [
+            "vitaminC",
+            "vitaminK"
+          ]
+        },
+        {
+          "SinppetID": 21,
+          "Strength": 1,
+          "Content": " A low-calorie intake helps you achieve this goal of weight loss since it involves eating a limited amount of calories daily meaning your body is using more calories daily than it is getting, thus resulting in weight loss. ",
+          "Type": "explanation",
+          "PointTo": "benefit",
+          "Keywords": [
+            "low-calorie"
+          ]
+        },
+        {
+          "SinppetID": 22,
+          "Strength": 1,
+          "Content": "Very low calorie diets can have enormous health benefits. Not only do they provide fast and efficient weight-loss but can also reduce the health risks associated with being obese or overweight. If you are obese (have a BMI of 30+) then you are at risk of developing serious medical conditions such as type 2 diabetes, heart disease, certain cancers, stroke, joint and muscle pain.",
+          "Type": "explanation",
+          "PointTo": "benefit",
+          "Keywords": [
+            "low-calorie"
+          ]
+        },
+        {
+          "SinppetID": 23,
+          "Strength": 1,
+          "Content": "Several benefits are associated with a low calorie diet. Dieters normally loose 4-7 pounds (2-3 kg) per week. Low calorie diets help slow down the aging process. Improved mental acuity. Dieters learn to eat a healthy, well balanced diet. Some research shows that a low calorie diet increases the life span.",
+          "Type": "explanation",
+          "PointTo": "benefit",
+          "Keywords": [
+            "low-calorie"
+          ]
+        },
+        {
+          "SnippetID": 24,
+          "Strength": -1,
+          "Content": "Mould can result in cramping in the stomach area, frequent vomiting, fever, dizziness, dehydration and persistent diarrhea. The symptoms may last a few hours, days or weeks depending on the severity of the condition.",
+          "Type": "explanation",
+          "PointTo": "side-effect",
+          "Keywords": [
+            "mould",
+            "toxic"
+          ]
+        },
+        {
+          "SnippetID": 25,
+          "Strength": -1,
+          "Content": "Before cooking tomato, you should check firstly whether the appearance of it is smooth without white mould, then you should smell to check whether the odour of it is sour or not, if it smells sour and putrefactive, it is spoiled one and you should not eat it.",
+          "Type": "explanation",
+          "PointTo": "side-effect",
+          "Keywords": [
+            "method"
+          ]
+        },
+        {
+          "SnippetID": 26,
+          "Strength": -1,
+          "Content": "Bacteria can result in cramping in the stomach area, frequent vomiting, fever, dizziness, dehydration and persistent diarrhea. The symptoms may last a few hours, days or weeks depending on the severity of the condition.",
+          "Type": "explanation",
+          "PointTo": "side-effect",
+          "Keywords": [
+            "bacteria",
+            "toxic"
+          ]
+        },
+        {
+          "SnippetID": 27,
+          "Strength": -1,
+          "Content": "Mould can result in cramping in the stomach area, frequent vomiting, fever, dizziness, dehydration and persistent diarrhea. The symptoms may last a few hours, days or weeks depending on the severity of the condition.",
+          "Type": "explanation",
+          "PointTo": "side-effect",
+          "Keywords": [
+            "mould"
+          ]
+        },
+        {
+          "SnippetID": 28,
+          "Strength": -1,
+          "Content": "Infectious bacteria can make you ill. They reproduce quickly in your body. Many give off chemicals called toxins, which can damage tissue and make you sick. ",
+          "Type": "explanation",
+          "PointTo": "side-effect",
+          "Keywords": [
+            "bacteria"
+          ]
+        },
+        {
+          "SinppetID": 29,
+          "Strength": 0,
+          "Content": "The tomato is the edible, often red, berry of the plant Solanum lycopersicum, commonly known as a tomato plant. The species originated in western South America and Central America. Numerous varieties of the tomato plant are widely grown in temperate climates across the world, with greenhouses allowing for the production of tomatoes throughout all seasons of the year.",
+          "Type": "definition",
+          "PointTo": "feature",
+          "Keywords": [
+            "red"
+          ]
+        }
+      ]
     }
   ]
 }
+
