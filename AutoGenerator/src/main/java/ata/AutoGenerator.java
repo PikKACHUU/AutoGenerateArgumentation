@@ -11,8 +11,8 @@ import java.util.ArrayList;
 public class AutoGenerator  {
 private static ArrayList<Objects> Objects;
 public static void main(String[] args)  {
-        getJSONData();
-        System.out.println("Hello world!");
+    String stream = readJSON("/Users/junye.mao/IdeaProjects/AutoGenerateArgumentation/AutoGenerator/src/main/resources/JSONDATA.json");
+        System.out.println(stream);
     }
 
     private AutoGenerator(){}
@@ -39,7 +39,7 @@ public static void main(String[] args)  {
             Phrases = new ArrayList<Phrase>();
             Pictures = new ArrayList<Picture>();
             Snippets = new ArrayList<Snippet>();
-            for(Object o : snippets){
+            for(Object o : phrases){
                 JSONObject phrase =(JSONObject) o;
                 keywords = getKeyWords(phrase);
                 Phrases.add(new Phrase((int)phrase.get("PhraseID"),(int)phrase.get("Strength"),(String)phrase.get("Content"),(String)phrase.get("Type"),(String)phrase.get("PointTo"),keywords));
