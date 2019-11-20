@@ -56,6 +56,7 @@ Object includes all the information related to it / pictures ,parses will be obj
     * `Strength` is used to symbolize the strength of this material(range is [-3,3]), while `-3` denotes this material is    strong negative, `-2` denotes this material is negative, `-1` denotes the material is weak negative, `0` denotes it is neutral. As is same for the number [0,3].
     * `PointTo` is used to denote which argument this image is pointed to, such as Price, Benefits, etc.
     * `URL` is used to store the Hyperlink of this image.
+    * `KeyWords` is used to store key feature of this object.
 * Phrases
   * `Phrases[]` is a array that stores phrase with attributes:
     * `PhraseID` is used for querying it.
@@ -63,6 +64,7 @@ Object includes all the information related to it / pictures ,parses will be obj
     * `Content` is used to store the text of this phrase.
     * `Type` is used to denote the type of this phrase, such as MP(Main Point),P(Point),Sum(Summary).
     * `PointTo` is used to denote which argument this phrase is pointed to, such as Price, Benefits, etc. Especially for Point Type.
+    * `KeyWords` is used to store key feature of this object.
 * Snippets
   * `Snippets[]` is a array that stores snippets with attributes:
     * `SnippetID` is used for querying it.
@@ -70,6 +72,7 @@ Object includes all the information related to it / pictures ,parses will be obj
     * `Content` is used to store the text of this snippet.
     * `Type` is used to denote the type of this snippet, such as Reason(RS), Example(EX),etc.
     * `PointTo` is used to denote which argument this snippet is pointed to, such as Price, Benefits, etc.
+    * `KeyWords` is used to store key feature of this object.
 <br>
 
 ### Method two
@@ -88,7 +91,8 @@ Each material will be a Object. They will be saved in three document, Pictures.j
  "LinkTo": String,
  "Type": String,
  "PointTo": String,
- "Content": String
+ "Content": String,
+ "Keywords":String[]
  }
 ]
 }
@@ -102,7 +106,8 @@ Each material will be a Object. They will be saved in three document, Pictures.j
     * `Type` denotes the type of this object such as MP,P,Sum,EX,RS.
     * `PointTo` is used to denote which argument this object is pointed to, such as Price, Benefits, etc.
     * `Content` is used to store the text of this object.
-
+    * `KeyWords` is used to store key feature of this object.
+    
 #### Picture
 
 ```
@@ -113,7 +118,8 @@ Each material will be a Object. They will be saved in three document, Pictures.j
  "Strength": int,
  "LinkTo": String,
  "PointTo": String,
- "URL": String
+ "URL": String,
+ "Keywords":String[]
  }
 ]
 }
@@ -126,6 +132,7 @@ Each material will be a Object. They will be saved in three document, Pictures.j
     * `LinkTo` denotes the thing which this image is linked to ,such as tomoto,potato,etc.
     * `PointTo` is used to denote which argument this image is pointed to, such as Price, Benefits, etc.
     * `URL` is used to store the Hyperlink of this image.
+    * `KeyWords` is used to store key feature of this object.
 
 ## Code Logic
 
