@@ -9,10 +9,10 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class AutoGenerator  {
-private static ArrayList<Objects> Objects;
+private static ArrayList<Objects> ObjectsList = new ArrayList<Objects>();
 public static void main(String[] args)  {
-    String stream = readJSON("/Users/junye.mao/IdeaProjects/AutoGenerateArgumentation/AutoGenerator/src/main/resources/JSONDATA.json");
-        System.out.println(stream);
+
+        getJSONData();
     }
 
     private AutoGenerator(){}
@@ -47,21 +47,22 @@ public static void main(String[] args)  {
             for (Object o : snippets) {
                 JSONObject snippet = (JSONObject) o;
                 keywords = getKeyWords(snippet);
-                Snippets.add(new Snippet((int) snippet.get("PhraseID"), (int) snippet.get("Strength"), (String) snippet.get("Content"), (String) snippet.get("Type"), (String) snippet.get("PointTo"), keywords));
+                Snippets.add(new Snippet((int) snippet.get("SnippetID"), (int) snippet.get("Strength"), (String) snippet.get("Content"), (String) snippet.get("Type"), (String) snippet.get("PointTo"), keywords));
             }
             for(Object o : pictures){
                 JSONObject picture =(JSONObject) o;
                 keywords = getKeyWords(picture);
-                Snippets.add(new Snippet((int)picture.get("PhraseID"),(int)picture.get("Strength"),(String)picture.get("Content"),(String)picture.get("Type"),(String)picture.get("PointTo"),keywords));
+                Pictures.add(new Picture((int)picture.get("ImageID"),(int)picture.get("Strength"),(String)picture.get("PointTo"),(String)picture.get("URL"),keywords));
             }
-            Objects.add(new Objects(ObjectName,ObjectID,Pictures,Phrases,Snippets));
+            System.out.println(Pictures.size()+" "+Phrases.size()+" "+Snippets.size());
+            ObjectsList.add(new Objects(ObjectName,ObjectID,Pictures,Phrases,Snippets));
         }
 
     }
 
     @NotNull
     private static String[] getKeyWords(JSONObject sample){
-        JSONArray KeyWords = sample.getJSONArray("KeyWords");
+        JSONArray KeyWords = sample.getJSONArray("Keywords");
         String[] keywords = new String[KeyWords.size()];
         for(int k=0;k<keywords.length;k++){
             keywords[k] = KeyWords.getString(k);

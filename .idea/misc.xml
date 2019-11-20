@@ -4,7 +4,14 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/ATA/pom.xml" />
+        <option value="$PROJECT_DIR$/AutoGenerator/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_9" default="false" project-jdk-name="9" project-jdk-type="JavaSDK">
