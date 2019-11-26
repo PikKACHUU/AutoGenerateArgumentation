@@ -48,9 +48,7 @@
           "PointTo": "cuisine",
           "URL": "../resources/images/tomato5",
           "Keywords": [
-            "grill",
-            "oily",
-            "harmful"
+            "grill"
           ]
         },
         {
@@ -402,7 +400,7 @@
         {
           "SnippetID": 1,
           "Strength": 0,
-          "Content": "The tomato is an herbaceous, usually sprawling plant in the nightshade family that is typically cultivated for its edible fruit. It is a perennial but is usually grown outdoors in temperate climates as an annual. Tomatoes are the most common and beloved vegetable crop for home gardeners.",
+          "Content": "Tomato is a glossy red, or occasionally yellow, pulpy edible fruit that is eaten as a vegetable or fried with other food material. It is an herbaceous, usually sprawling plant in the nightshade family that is typically cultivated for its edible fruit. It is a perennial but is usually grown outdoors in temperate climates as an annual. Tomatoes are the most common and beloved vegetable crop for home gardeners.",
           "Type": "definition",
           "PointTo": "feature",
           "Keywords": [
@@ -412,7 +410,7 @@
         {
           "SnippetID": 2,
           "Strength": 0,
-          "Content": "A member of the nightshade family (along with aubergines, peppers and chillies), tomatoes are in fact a fruit, but their affinity for other savoury ingredients means that they are usually classed as a vegetable.",
+          "Content": "As a member of the nightshade family (along with aubergines, peppers and chillies), tomatoes are in fact a fruit, but their affinity for other savoury ingredients means that they are usually classed as a vegetable.",
           "Type": "definition",
           "PointTo": "feature",
           "Keywords": [

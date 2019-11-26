@@ -8,11 +8,24 @@ import org.jetbrains.annotations.NotNull;
 import java.io.*;
 import java.util.ArrayList;
 
+import static ata.AlgorithmUtil.*;
+import static ata.PowerPointUtil.*;
+
 public class AutoGenerator  {
 private static ArrayList<Objects> ObjectsList = new ArrayList<Objects>();
 public static void main(String[] args)  {
-
+        Objects target = null;
         getJSONData();
+        int objectID = getRandomID(ObjectsList);
+        for(Objects object:ObjectsList){
+            if(object.getObjectID()==objectID) {
+                 target = object;
+            }
+        }//can be optimised:  current time complexity O(n)
+
+       //System.out.println(objectID);
+        GeneratorOne(target);
+
     }
 
     private AutoGenerator(){}
@@ -32,7 +45,7 @@ public static void main(String[] args)  {
             JSONObject object = (JSONObject) JSONObjects.get(0);
             ObjectName = (String) object.get("ObjectName");
             ObjectID = (int) object.get("ObjectID");
-            System.out.println("Object name " + ObjectName + " " + ObjectID);
+            //System.out.println("Object name " + ObjectName + " " + ObjectID);
             JSONArray phrases = (JSONArray) object.getJSONArray("Phrases");
             JSONArray pictures = (JSONArray) object.getJSONArray("Pictures");
             JSONArray snippets = (JSONArray) object.getJSONArray("Snippets");
@@ -54,10 +67,9 @@ public static void main(String[] args)  {
                 keywords = getKeyWords(picture);
                 Pictures.add(new Picture((int)picture.get("ImageID"),(int)picture.get("Strength"),(String)picture.get("PointTo"),(String)picture.get("URL"),keywords));
             }
-            System.out.println(Pictures.size()+" "+Phrases.size()+" "+Snippets.size());
+           // System.out.println(Pictures.size()+" "+Phrases.size()+" "+Snippets.size());
             ObjectsList.add(new Objects(ObjectName,ObjectID,Pictures,Phrases,Snippets));
         }
-
     }
 
     @NotNull
@@ -91,7 +103,19 @@ public static void main(String[] args)  {
         }
     }
 
-public ArrayList<Object> GeneratorOne(ArrayList<Objects> Objects){return null;}
+    public static ArrayList<Object> GeneratorOne(Objects object){
+        ArrayList samples = new ArrayList();
+        ArrayList<Snippet> snippets = object.getSnippets();
+        ArrayList<Picture> pictures = object.getPictures();
+        ArrayList<Phrase> phrases = object.getPhrases();
+        Snippet intro = getDefinition(snippets);
+        samples=addObj(samples,intro);
+        Picture img = getPicture(pictures,samples.get(samples.size()-1));
+        samples=addObj(samples,img);
+        System.out.println(intro.getContent()+"\n");
+        return samples;
+    }
+
 public ArrayList<Object> GeneratorTwo(ArrayList<Objects> Objects){return null;}
 public ArrayList<Object> GeneratorThree(ArrayList<Objects> Objects){return null;}
 public void CreateSlidesByTemplate(ArrayList<Object> Material){}
