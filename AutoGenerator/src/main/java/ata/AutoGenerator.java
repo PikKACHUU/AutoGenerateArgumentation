@@ -9,7 +9,6 @@ import java.io.*;
 import java.util.ArrayList;
 
 import static ata.AlgorithmUtil.*;
-import static ata.PowerPointUtil.*;
 
 public class AutoGenerator  {
 private static ArrayList<Objects> ObjectsList = new ArrayList<Objects>();
@@ -109,10 +108,14 @@ public static void main(String[] args)  {
         ArrayList<Picture> pictures = object.getPictures();
         ArrayList<Phrase> phrases = object.getPhrases();
         Snippet intro = getDefinition(snippets);
-        samples=addObj(samples,intro);
+        if(intro != null){
+            samples.add(intro);
+        }
         Picture img = getPicture(pictures,samples.get(samples.size()-1));
-        samples=addObj(samples,img);
-        System.out.println(intro.getContent()+"\n");
+        if(img != null){
+            samples.add(img);
+        }
+        System.out.println(samples.size());
         return samples;
     }
 

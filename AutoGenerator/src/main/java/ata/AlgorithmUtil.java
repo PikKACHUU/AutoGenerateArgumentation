@@ -5,12 +5,12 @@ import java.util.Iterator;
 
 public class AlgorithmUtil {
 
-    public static <T> ArrayList addObj(ArrayList sample, T object ){
-        if(object != null){
-            sample.add(object);
-        }
-        return sample;
-    }
+//    public static <T> ArrayList addObj(ArrayList sample, T object ){
+//        if(object != null){
+//            sample.add(object);
+//        }
+//        return sample;
+//    }
 
     public static <T> Picture getPicture(ArrayList<Picture> sample, T PreObject){
         String[] arr;
@@ -18,7 +18,7 @@ public class AlgorithmUtil {
         if(PreObject instanceof Phrase) {
             Phrase pre = (Phrase) PreObject;
             for (Picture pic : sample) {
-                if (pic.getPointTo() == pre.getPointTo()) {
+                if (pic.getPointTo().equals(pre.getPointTo())) {
                     arr = pic.getKeyWords();
                     arr2 = pre.getKeyWords();
                     for(String a:arr){
@@ -32,7 +32,7 @@ public class AlgorithmUtil {
         }else if(PreObject instanceof Snippet) {
             Snippet pre = (Snippet) PreObject;
             for (Picture pic : sample) {
-                if (pic.getPointTo() == pre.getPointTo()) {
+                if (pic.getPointTo().equals(pre.getPointTo())) {
                     arr = pic.getKeyWords();
                     arr2 = pre.getKeyWords();
                     for(String a:arr){
@@ -46,7 +46,7 @@ public class AlgorithmUtil {
         }else if(PreObject instanceof Picture) {
             Picture pre = (Picture) PreObject;
             for (Picture pic : sample) {
-                if (pic.getPointTo() == pre.getPointTo()) {
+                if (pic.getPointTo().equals(pre.getPointTo())) {
                     arr = pic.getKeyWords();
                     arr2 = pre.getKeyWords();
                     for(String a:arr){
