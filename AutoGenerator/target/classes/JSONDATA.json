@@ -17,7 +17,7 @@
         {
           "ImageID": 2,
           "Strength": -2,
-          "PointTo": "feature",
+          "PointTo": "side-effect",
           "URL": "../resources/images/tomato2",
           "Keywords": [
             "musty",
@@ -44,7 +44,7 @@
         },
         {
           "ImageID": 5,
-          "Strength": -1,
+          "Strength": 0,
           "PointTo": "cuisine",
           "URL": "../resources/images/tomato5",
           "Keywords": [
@@ -90,7 +90,7 @@
         {
           "ImageID": 10,
           "Strength": -2,
-          "PointTo": "feature",
+          "PointTo": "side-effect",
           "URL": "../resources/images/tomato10",
           "Keywords": [
             "musty"
@@ -98,7 +98,7 @@
         },
         {
           "ImageID": 11,
-          "Strength": -1,
+          "Strength": 0,
           "PointTo": "cuisine",
           "URL": "../resources/images/tomato11",
           "Keywords": [
@@ -364,7 +364,7 @@
           "Strength": -1,
           "Content": "There are several poisonous substances in spoiled tomato such as mould and bacteria",
           "Type": "Main-point",
-          "PointTo": "benefit",
+          "PointTo": "side-effect",
           "Keywords": [
             "toxic",
             "mould",

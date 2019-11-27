@@ -1,24 +1,25 @@
-package ata;
+package ata.Object;
 
-public class Phrase {
-    private int PhraseID;
+public class Snippet {
+    private int SnippetID;
     private int Strength;
     private String Content;
     private String Type;
     private String PointTo;
     private String[] KeyWords;
-    public Phrase(int PhraseID,int Strength, String Content, String Type, String PointTo, String[] KeyWords){
+
+    public Snippet(int SnippetID, int Strength, String Content, String Type, String PointTo, String[] KeyWords){
         super();
-        this.PhraseID = PhraseID;
-        this.Strength = Strength;
+        this.SnippetID = SnippetID;
         this.Content = Content;
+        this.Strength = Strength;
         this.Type = Type;
         this.PointTo = PointTo;
         this.KeyWords = KeyWords;
     }
 
-    public int getPhraseID() {
-        return PhraseID;
+    public int getSnippetID() {
+        return SnippetID;
     }
 
     public int getStrength() {

@@ -1,47 +1,31 @@
-package ata;
+package ata.Util;
 
-
-import com.alibaba.fastjson.*;
+import ata.*;
+import ata.Object.*;
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 import org.jetbrains.annotations.NotNull;
-
+import org.jetbrains.annotations.Nullable;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 
-import static ata.AlgorithmUtil.*;
-
-public class AutoGenerator  {
-private static ArrayList<Objects> ObjectsList = new ArrayList<Objects>();
-public static void main(String[] args)  {
-        Objects target = null;
-        getJSONData();
-        int objectID = getRandomID(ObjectsList);
-        for(Objects object:ObjectsList){
-            if(object.getObjectID()==objectID) {
-                 target = object;
-            }
-        }//can be optimised:  current time complexity O(n)
-
-       //System.out.println(objectID);
-        GeneratorOne(target);
-
-    }
-
-    private AutoGenerator(){}
-// getJSONData() is method to transfer json string to Objects
-    private static void getJSONData() {
+public class JSONUtil {
+    public void getJSONData(Class runner, ArrayList<Objects> ObjectsList, String JSONPath) {
         String ObjectName;
         int ObjectID;
         ArrayList<Picture> Pictures;
         ArrayList<Phrase> Phrases ;
         ArrayList<Snippet> Snippets;
         String[] keywords;
-        String path = AutoGenerator.class.getClassLoader().getResource("JSONDATA.json").getPath();
-        String stream = readJSON(path);
+        String path = runner.getClassLoader().getResource(JSONPath).getPath();
+        String stream = this.readJSON(path);
         JSONObject Jobj = JSON.parseObject(stream);
         JSONArray JSONObjects = Jobj.getJSONArray("JSONObjects");
         for(int i=0;i<JSONObjects.size();i++){
-            JSONObject object = (JSONObject) JSONObjects.get(0);
+            JSONObject object = (JSONObject) JSONObjects.get(i);
             ObjectName = (String) object.get("ObjectName");
             ObjectID = (int) object.get("ObjectID");
             //System.out.println("Object name " + ObjectName + " " + ObjectID);
@@ -53,36 +37,37 @@ public static void main(String[] args)  {
             Snippets = new ArrayList<Snippet>();
             for(Object o : phrases){
                 JSONObject phrase =(JSONObject) o;
-                keywords = getKeyWords(phrase);
+                keywords = this.getKeyWords(phrase);
                 Phrases.add(new Phrase((int)phrase.get("PhraseID"),(int)phrase.get("Strength"),(String)phrase.get("Content"),(String)phrase.get("Type"),(String)phrase.get("PointTo"),keywords));
             }
             for (Object o : snippets) {
                 JSONObject snippet = (JSONObject) o;
-                keywords = getKeyWords(snippet);
+                keywords = this.getKeyWords(snippet);
                 Snippets.add(new Snippet((int) snippet.get("SnippetID"), (int) snippet.get("Strength"), (String) snippet.get("Content"), (String) snippet.get("Type"), (String) snippet.get("PointTo"), keywords));
             }
             for(Object o : pictures){
                 JSONObject picture =(JSONObject) o;
-                keywords = getKeyWords(picture);
+                keywords = this.getKeyWords(picture);
                 Pictures.add(new Picture((int)picture.get("ImageID"),(int)picture.get("Strength"),(String)picture.get("PointTo"),(String)picture.get("URL"),keywords));
             }
-           // System.out.println(Pictures.size()+" "+Phrases.size()+" "+Snippets.size());
+            // System.out.println(Pictures.size()+" "+Phrases.size()+" "+Snippets.size());
             ObjectsList.add(new Objects(ObjectName,ObjectID,Pictures,Phrases,Snippets));
         }
     }
 
+
+
     @NotNull
-    private static String[] getKeyWords(JSONObject sample){
+    private String[] getKeyWords(JSONObject sample) {
         JSONArray KeyWords = sample.getJSONArray("Keywords");
+        if(KeyWords.size()==0) throw new NullPointerException("Illegal JSON structure: has no KeyWords");
         String[] keywords = new String[KeyWords.size()];
-        for(int k=0;k<keywords.length;k++){
-            keywords[k] = KeyWords.getString(k);
-        }
+        Arrays.setAll(keywords, KeyWords::getString);
         return keywords;
     }
 
-    private static String readJSON(String fileName) {
-        String JsonStr = "";
+    @Nullable
+    private String readJSON(String fileName) {
         try {
             File jsonFile = new File(fileName);
             FileReader fileReader = new FileReader(jsonFile);
@@ -94,32 +79,10 @@ public static void main(String[] args)  {
             }
             fileReader.close();
             reader.close();
-            JsonStr = sb.toString();
-            return JsonStr;
+            return sb.toString();
         } catch (IOException e) {
             e.printStackTrace();
             return null;
         }
     }
-
-    public static ArrayList<Object> GeneratorOne(Objects object){
-        ArrayList samples = new ArrayList();
-        ArrayList<Snippet> snippets = object.getSnippets();
-        ArrayList<Picture> pictures = object.getPictures();
-        ArrayList<Phrase> phrases = object.getPhrases();
-        Snippet intro = getDefinition(snippets);
-        if(intro != null){
-            samples.add(intro);
-        }
-        Picture img = getPicture(pictures,samples.get(samples.size()-1));
-        if(img != null){
-            samples.add(img);
-        }
-        System.out.println(samples.size());
-        return samples;
-    }
-
-public ArrayList<Object> GeneratorTwo(ArrayList<Objects> Objects){return null;}
-public ArrayList<Object> GeneratorThree(ArrayList<Objects> Objects){return null;}
-public void CreateSlidesByTemplate(ArrayList<Object> Material){}
 }

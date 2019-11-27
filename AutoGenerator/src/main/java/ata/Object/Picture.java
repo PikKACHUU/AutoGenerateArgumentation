@@ -1,4 +1,4 @@
-package ata;
+package ata.Object;
 
 public class Picture {
     private int ImageID;
