@@ -37,4 +37,29 @@ public class Objects {
     public ArrayList<Snippet> getSnippets() {
         return Snippets;
     }
+
+    public void setObjectID(int objectID) {
+        ObjectID = objectID;
+    }
+
+    public void setObjectName(String objectName) {
+        ObjectName = objectName;
+    }
+
+    public void setPhrases(ArrayList<Phrase> phrases) {
+        Phrases = phrases;
+    }
+
+    public void setPictures(ArrayList<Picture> pictures) {
+        Pictures = pictures;
+    }
+
+    public void setSnippets(ArrayList<Snippet> snippets) {
+        Snippets = snippets;
+    }
+
+    @Override
+    public String toString() {
+        return ObjectName+" "+ObjectID;
+    }
 }

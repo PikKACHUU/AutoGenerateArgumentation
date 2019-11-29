@@ -55,8 +55,6 @@ public class JSONUtil {
         }
     }
 
-
-
     @NotNull
     private String[] getKeyWords(JSONObject sample) {
         JSONArray KeyWords = sample.getJSONArray("Keywords");

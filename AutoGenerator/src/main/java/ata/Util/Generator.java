@@ -9,23 +9,47 @@ public class Generator{
         ArrayList<Snippet> snippets = object.getSnippets();
         ArrayList<Picture> pictures = object.getPictures();
         ArrayList<Phrase> phrases = object.getPhrases();
-        Snippet intro = getDefinition(snippets);
+
+        Snippet intro = get(snippets,"definition");
         addMaterial(samples, intro);
-        Picture img = getPicture(pictures,samples);
+        Picture img = get(pictures,intro);
         addMaterial(samples, img);
-        Phrase MainPoint = getPositiveMainPoint(phrases);
+
+        Phrase MainPoint = get(phrases, "Main-point","positive");
         addMaterial(samples,MainPoint);
         remove(phrases, MainPoint);
-        Picture img2 = getPicture(pictures,samples);
+        Picture img2 = get(pictures,MainPoint);
         addMaterial(samples, img2);
 
+        Phrase cloneObj = new Phrase(MainPoint.getPhraseID(),MainPoint.getStrength(),MainPoint.getContent(),MainPoint.getType(),MainPoint.getPointTo(),MainPoint.getKeyWords());
+        while(cloneObj.getKeyWords().length>0){
+             for(String a:cloneObj.getKeyWords())
+             System.out.println(a);
+             Phrase PointView = get(phrases,cloneObj,"viewpoint");
+             Snippet explanation = get(snippets,PointView,"explanation");
+             if(addMaterial(samples,PointView) && addMaterial(samples,explanation)){
+             remove(phrases,PointView);
+             remove(snippets, explanation);
+             cloneObj.setKeyWords(removeMatchedKeyWords(cloneObj.getKeyWords(),PointView));
+             }
+        }
 
-        Phrase MainPointTwo = getNegativeMainPoint(phrases);
+        Phrase MainPointTwo = get(phrases, "Main-point","negative");
         addMaterial(samples,MainPointTwo);
         remove(phrases, MainPointTwo);
-        Picture img3 = getPicture(pictures,samples);
+        Picture img3 = get(pictures,MainPointTwo);
         addMaterial(samples, img3);
-
+         Phrase cloneObjTwo = new Phrase(MainPointTwo.getPhraseID(),MainPointTwo.getStrength(),MainPointTwo.getContent(),MainPointTwo.getType(),MainPointTwo.getPointTo(),MainPointTwo.getKeyWords());
+        while(cloneObjTwo.getKeyWords().length>0){
+             Phrase PointView = get(phrases,cloneObjTwo,"viewpoint");
+             Snippet explanation = get(snippets,PointView,"explanation");
+             if(addMaterial(samples,PointView) && addMaterial(samples,explanation)){
+             remove(phrases,PointView);
+             remove(snippets, explanation);
+             cloneObjTwo.setKeyWords(removeMatchedKeyWords(cloneObjTwo.getKeyWords(),PointView));
+             }
+        }
+        System.out.println(samples.toString());
         return samples;
     }
 

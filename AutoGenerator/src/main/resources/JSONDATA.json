@@ -54,7 +54,7 @@
         {
           "ImageID": 6,
           "Strength": 2,
-          "PointTo": "nutrition",
+          "PointTo": "benefit",
           "URL": "../resources/images/tomato6",
           "Keywords": [
             "nutritious"
@@ -63,7 +63,7 @@
         {
           "ImageID": 7,
           "Strength": 1,
-          "PointTo": "nutrition",
+          "PointTo": "benefit",
           "URL": "../resources/images/tomato7",
           "Keywords": [
             "nutritious"
@@ -151,6 +151,14 @@
             "red",
             "vegetable"
           ]
+        },{
+          "ImageID": 17,
+          "Strength": 0,
+          "PointTo": "storage",
+          "URL": "../resources/images/tomato17",
+          "Keywords": [
+            "musty"
+          ]
         }
       ],
       "Phrases": [
@@ -163,7 +171,7 @@
           "Keywords": [
             "nutritious",
             "vitaminC",
-            "low-calories",
+            "low-calorie",
             "vitaminK"
           ]
         },
@@ -306,7 +314,7 @@
           "PointTo": "benefit",
           "Keywords": [
             "vitaminC",
-            "low-calories",
+            "low-calorie",
             "vitaminK"
           ]
         },
@@ -349,7 +357,7 @@
           "PhraseID": 17,
           "Strength": -1,
           "Content": "Spoiled tomato contains harmful substance which is fatal for human health such as bacteria and mould",
-          "Type": "viewpoint",
+          "Type": "Main-point",
           "PointTo": "side-effect",
           "Keywords": [
             "toxic",
@@ -424,6 +432,7 @@
           "Type": "explanation",
           "PointTo": "storage",
           "Keywords": [
+            "musty",
             "method",
             "outside",
             "freezer"
@@ -609,7 +618,8 @@
           "PointTo": "benefit",
           "Keywords": [
             "vitaminC",
-            "vitaminK"
+            "vitaminK",
+            "nutritious"
           ]
         },
         {
@@ -620,7 +630,8 @@
           "PointTo": "benefit",
           "Keywords": [
             "vitaminC",
-            "vitaminK"
+            "vitaminK",
+            "nutritious"
           ]
         },
         {

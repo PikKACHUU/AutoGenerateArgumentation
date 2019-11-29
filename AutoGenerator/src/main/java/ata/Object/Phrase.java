@@ -40,4 +40,33 @@ public class Phrase {
     public String[] getKeyWords() {
         return KeyWords;
     }
+
+    public void setContent(String content) {
+        Content = content;
+    }
+
+    public void setKeyWords(String[] keyWords) {
+        KeyWords = keyWords;
+    }
+
+    public void setPhraseID(int phraseID) {
+        PhraseID = phraseID;
+    }
+
+    public void setPointTo(String pointTo) {
+        PointTo = pointTo;
+    }
+
+    public void setStrength(int strength) {
+        Strength = strength;
+    }
+
+    public void setType(String type) {
+        Type = type;
+    }
+
+    @Override
+    public String toString() {
+        return PhraseID+" "+Content;
+    }
 }

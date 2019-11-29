@@ -35,4 +35,29 @@ public class Picture {
     public String[] getKeyWords() {
         return KeyWords;
     }
+
+    public void setStrength(int strength) {
+        Strength = strength;
+    }
+
+    public void setPointTo(String pointTo) {
+        PointTo = pointTo;
+    }
+
+    public void setKeyWords(String[] keyWords) {
+        KeyWords = keyWords;
+    }
+
+    public void setImageID(int imageID) {
+        ImageID = imageID;
+    }
+
+    public void setURL(String URL) {
+        this.URL = URL;
+    }
+
+    @Override
+    public String toString() {
+        return ImageID+" "+URL;
+    }
 }

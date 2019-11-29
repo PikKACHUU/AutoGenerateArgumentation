@@ -8,7 +8,7 @@ public class Snippet {
     private String PointTo;
     private String[] KeyWords;
 
-    public Snippet(int SnippetID, int Strength, String Content, String Type, String PointTo, String[] KeyWords){
+    public Snippet(int SnippetID, int Strength, String Content, String Type, String PointTo, String[] KeyWords) {
         super();
         this.SnippetID = SnippetID;
         this.Content = Content;
@@ -40,5 +40,34 @@ public class Snippet {
 
     public String[] getKeyWords() {
         return KeyWords;
+    }
+
+    public void setKeyWords(String[] keyWords) {
+        KeyWords = keyWords;
+    }
+
+    public void setPointTo(String pointTo) {
+        PointTo = pointTo;
+    }
+
+    public void setStrength(int strength) {
+        Strength = strength;
+    }
+
+    public void setType(String type) {
+        Type = type;
+    }
+
+    public void setContent(String content) {
+        Content = content;
+    }
+
+    public void setSnippetID(int snippetID) {
+        SnippetID = snippetID;
+    }
+
+    @Override
+    public String toString() {
+        return SnippetID+" "+Content;
     }
 }

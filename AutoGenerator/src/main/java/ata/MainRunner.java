@@ -2,7 +2,7 @@ package ata;
 
 import ata.Object.Objects;
 import java.util.ArrayList;
-import static ata.Util.AlgorithmUtil.selectObject;
+import static ata.Util.AlgorithmUtil.RandomSelectObject;
 import ata.Util.Generator;
 import ata.Util.JSONUtil;
 
@@ -13,7 +13,7 @@ public static void main(String[] args)  {
         Generator generator = new Generator();
         JSONUtil reader = new JSONUtil();
         reader.getJSONData(MainRunner.class,ObjectsList,"JSONDATA.json");
-        Objects target = selectObject(ObjectsList);
+        Objects target = RandomSelectObject(ObjectsList);
 
     //System.out.println(objectID);
         generator.GeneratorOne(target);
