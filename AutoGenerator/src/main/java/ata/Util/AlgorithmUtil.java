@@ -9,7 +9,7 @@ import java.util.ListIterator;
 
 public class AlgorithmUtil {
 
-     public static <T> T get(ArrayList<T> objects, String key, String Strength){
+     public  <T> T get(ArrayList<T> objects, String key, String Strength){
          ArrayList<T> sample = new ArrayList<T>();
          if(judgeSize(objects)) throw new IllegalArgumentException("List parameter has no elements");
          if(key==null) throw new IllegalArgumentException();
@@ -71,7 +71,7 @@ public class AlgorithmUtil {
      }
      //get a material from ArrayList according to two features
 
-     public static <T> T get(ArrayList<T> objects,  String key){
+     public  <T> T get(ArrayList<T> objects,  String key){
          ArrayList<T> sample = new ArrayList<T>();
          if(judgeSize(objects)) throw new IllegalArgumentException("List parameter has no elements");
          switch(key){
@@ -148,9 +148,9 @@ public class AlgorithmUtil {
          return sample.get(index);
 
      }
-     //get amaterial from ArrayList according to one  feature
+     //get a material from ArrayList according to one  feature
 
-     public static <T> T get(ArrayList<T> objects, String type,String PointTo, String Strength){
+    public <T> T get(ArrayList<T> objects, String type,String PointTo, String Strength){
          ArrayList<T> sample = new ArrayList<T>();
          if(judgeSize(objects)) throw new IllegalArgumentException("List parameter has no elements");
          if(type==null || PointTo ==null) throw new IllegalArgumentException();
@@ -206,7 +206,7 @@ public class AlgorithmUtil {
      }
      //get a material from ArrayList according to three features
 
-     public static <T> T get(ArrayList<T> objects,  int ObjectID){
+    public <T> T get(ArrayList<T> objects,  int ObjectID){
          if(judgeSize(objects)) throw new IllegalArgumentException("List parameter has no elements");
                  for(T object:objects){
                      if(object instanceof Phrase){
@@ -233,7 +233,7 @@ public class AlgorithmUtil {
      }
      //get a material from ArrayList according to ObjectID
 
-     public static <T> T get(ArrayList<T> objects, Object PreObject) {
+     public <T> T get(ArrayList<T> objects, Object PreObject) {
         if (judgeSize(objects) || PreObject == null)
             throw new IllegalArgumentException("List parameter has no elements");
          ArrayList<Double> MatchRateArray = new ArrayList<Double>();
@@ -346,13 +346,13 @@ public class AlgorithmUtil {
          return List.get(Index);
      }
 
-     public static <T> T get(ArrayList<T> objects, Object PreObject, String type) {
+    public <T> T get(ArrayList<T> objects, Object PreObject, String type) {
          if (judgeSize(objects) || PreObject == null)
              throw new IllegalArgumentException("List parameter has no elements");
          ArrayList<Double> MatchRateArray = new ArrayList<Double>();
          for(int i =0;i<objects.size();i++){
              MatchRateArray.add(0.0);
-         }
+         }  
          ArrayList<T> List = new ArrayList<T>();
          double maxRate = 0;
          double rate;
@@ -459,7 +459,7 @@ public class AlgorithmUtil {
          return List.get(Index);
      }
 
-     private static double getMaxRate(double maxRate, double rate) {
+    public double getMaxRate(double maxRate, double rate) {
          if(rate>maxRate) maxRate =rate;
          return (double)maxRate;
      }
@@ -595,11 +595,11 @@ public class AlgorithmUtil {
         return false;
     }
 
-     public static <T> int getRandomID(ArrayList<T> List){
+    public static <T> int getRandomID(ArrayList<T> List){
          return (int)(Math.random()*List.size()+1);
     }
 
-     public static <T> ArrayList<T> remove(ArrayList<T> list, T object){
+    public <T> ArrayList<T> remove(ArrayList<T> list, T object){
         if(judgeSize(list)||object==null){
             throw new IllegalArgumentException("illegal parameter");}
         else{
@@ -629,7 +629,7 @@ public class AlgorithmUtil {
         }
     }
 
-     public static <T> String[] removeMatchedKeyWords(String[] arr, T object){
+    public <T> String[] removeMatchedKeyWords(String[] arr, T object){
          ArrayList<String> list = new ArrayList<String>();
          String[] result;
          String[] sample = null;
@@ -657,7 +657,7 @@ public class AlgorithmUtil {
          return result;
      }
 
-     public  static <T> boolean addMaterial(ArrayList samples, T object) {
+    public <T> boolean addMaterial(ArrayList samples, T object) {
         if(object != null && samples !=null){
             samples.add(object);
             return true;

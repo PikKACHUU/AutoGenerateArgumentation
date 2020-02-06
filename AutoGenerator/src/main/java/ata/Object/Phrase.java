@@ -7,6 +7,7 @@ public class Phrase {
     private String Type;
     private String PointTo;
     private String[] KeyWords;
+
     public Phrase(int PhraseID,int Strength, String Content, String Type, String PointTo, String[] KeyWords){
         super();
         this.PhraseID = PhraseID;

@@ -5,10 +5,11 @@
       "ObjectID": 1,
       "Pictures": [
         {
+
           "ImageID": 1,
           "Strength": 0,
           "PointTo": "feature",
-          "URL": "../resources/images/tomato1",
+          "URL": "AutoGenerator/target/classes/images/tomato1.jpg",
           "Keywords": [
             "red",
             "vegetable"
@@ -18,7 +19,7 @@
           "ImageID": 2,
           "Strength": -2,
           "PointTo": "side-effect",
-          "URL": "../resources/images/tomato2",
+          "URL": "AutoGenerator/target/classes/images/tomato2.jpg",
           "Keywords": [
             "musty",
             "toxic"
@@ -28,7 +29,7 @@
           "ImageID": 3,
           "Strength": 1,
           "PointTo": "cuisine",
-          "URL": "../resources/images/tomato3",
+          "URL": "AutoGenerator/target/classes/images/tomato3.jpg",
           "Keywords": [
             "soup"
           ]
@@ -37,7 +38,7 @@
           "ImageID": 4,
           "Strength": 0,
           "PointTo": "cuisine",
-          "URL": "../resources/images/tomato4",
+          "URL": "AutoGenerator/target/classes/images/tomato4.jpg",
           "Keywords": [
             "grill"
           ]
@@ -46,7 +47,7 @@
           "ImageID": 5,
           "Strength": 0,
           "PointTo": "cuisine",
-          "URL": "../resources/images/tomato5",
+          "URL": "AutoGenerator/target/classes/images/tomato5.jpg",
           "Keywords": [
             "grill"
           ]
@@ -55,7 +56,7 @@
           "ImageID": 6,
           "Strength": 2,
           "PointTo": "benefit",
-          "URL": "../resources/images/tomato6",
+          "URL": "AutoGenerator/target/classes/images/tomato6.jpg",
           "Keywords": [
             "nutritious"
           ]
@@ -64,7 +65,7 @@
           "ImageID": 7,
           "Strength": 1,
           "PointTo": "benefit",
-          "URL": "../resources/images/tomato7",
+          "URL": "AutoGenerator/target/classes/images/tomato7.jpg",
           "Keywords": [
             "nutritious"
           ]
@@ -73,7 +74,7 @@
           "ImageID": 8,
           "Strength": 1,
           "PointTo": "cuisine",
-          "URL": "../resources/images/tomato8",
+          "URL": "/AutoGenerator/target/classes/images/tomato8.jpg",
           "Keywords": [
             "soup"
           ]
@@ -82,7 +83,7 @@
           "ImageID": 9,
           "Strength": 1,
           "PointTo": "cuisine",
-          "URL": "../resources/images/tomato9",
+          "URL": "AutoGenerator/target/classes/images/tomato9.jpg",
           "Keywords": [
             "soup"
           ]
@@ -91,7 +92,7 @@
           "ImageID": 10,
           "Strength": -2,
           "PointTo": "side-effect",
-          "URL": "../resources/images/tomato10",
+          "URL": "AutoGenerator/target/classes/images/tomato10.jpg",
           "Keywords": [
             "musty"
           ]
@@ -100,7 +101,7 @@
           "ImageID": 11,
           "Strength": 0,
           "PointTo": "cuisine",
-          "URL": "../resources/images/tomato11",
+          "URL": "AutoGenerator/target/classes/images/tomato11.jpg",
           "Keywords": [
             "grill"
           ]
@@ -109,7 +110,7 @@
           "ImageID": 12,
           "Strength": 2,
           "PointTo": "cuisine",
-          "URL": "../resources/images/tomato12",
+          "URL": "AutoGenerator/target/classes/images/tomato12.jpg",
           "Keywords": [
             "salad"
           ]
@@ -118,7 +119,7 @@
           "ImageID": 13,
           "Strength": 2,
           "PointTo": "cuisine",
-          "URL": "../resources/images/tomato13",
+          "URL": "AutoGenerator/target/classes/images/tomato13.jpg",
           "Keywords": [
             "salad"
           ]
@@ -127,7 +128,7 @@
           "ImageID": 14,
           "Strength": 2,
           "PointTo": "cuisine",
-          "URL": "../resources/images/tomato14",
+          "URL": "AutoGenerator/target/classes/images/tomato14.jpg",
           "Keywords": [
             "salad"
           ]
@@ -136,7 +137,7 @@
           "ImageID": 15,
           "Strength": 0,
           "PointTo": "feature",
-          "URL": "../resources/images/tomato15",
+          "URL": "AutoGenerator/target/classes/images/tomato15.jpg",
           "Keywords": [
             "red",
             "vegetable"
@@ -146,7 +147,7 @@
           "ImageID": 16,
           "Strength": 0,
           "PointTo": "feature",
-          "URL": "../resources/images/tomato16",
+          "URL": "AutoGenerator/target/classes/images/tomato16.jpg",
           "Keywords": [
             "red",
             "vegetable"
@@ -155,7 +156,7 @@
           "ImageID": 17,
           "Strength": 0,
           "PointTo": "storage",
-          "URL": "../resources/images/tomato17",
+          "URL": "AutoGenerator/target/classes/images/tomato17.jpg",
           "Keywords": [
             "musty"
           ]
@@ -282,7 +283,8 @@
           "PointTo": "benefit",
           "Keywords": [
             "vitaminC",
-            "vitaminK"
+            "vitaminK",
+            "nutritious"
           ]
         },
         {
@@ -293,13 +295,14 @@
           "PointTo": "benefit",
           "Keywords": [
             "vitaminC",
-            "vitaminK"
+            "vitaminK",
+            "nutritious"
           ]
         },
         {
           "PhraseID": 12,
           "Strength": 1,
-          "Content": "Tomatoes are one of the low-calorie vegetables;hold just 18 calories per 100g",
+          "Content": "Tomatoes are one of the low-calorie vegetables which hold just 18 calories per 100g",
           "Type": "viewpoint",
           "PointTo": "benefit",
           "Keywords": [
@@ -315,7 +318,8 @@
           "Keywords": [
             "vitaminC",
             "low-calorie",
-            "vitaminK"
+            "vitaminK",
+            "nutritious"
           ]
         },
         {
@@ -326,7 +330,7 @@
           "PointTo": "benefit",
           "Keywords": [
             "vitaminC",
-            "vitaminK"
+            "vitaminK","nutritious"
           ]
         },
         {
@@ -574,8 +578,7 @@
           "Type": "explanation",
           "PointTo": "cuisine",
           "Keywords": [
-            "grill",
-            "sliced"
+            "grill"
           ]
         },
         {
