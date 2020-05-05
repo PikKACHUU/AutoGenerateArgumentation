@@ -21,7 +21,7 @@ Object includes all the information related to it / pictures ,parses will be obj
   {
   "ObjectName": String,
   "ObjectID" : int,
-  "Ketwords": String[],
+  "Keywords": String[],
   "Pictures":[
   {"ImageID": int,
    "Strength": int,
