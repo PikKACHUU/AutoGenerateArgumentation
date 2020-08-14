@@ -3,27 +3,27 @@
 [![](https://img.shields.io/github/followers/PikKACHUU.svg?style=social&label=Follow%20Me)](https://github.com/PikKACHUU)
 
 ## Data Structure
-'''
--AutoGenerateArgumentation
- -AutoGenerator
-  -src
-   -main
-    -java/ata
-     -Object
-      -Objects.java
-      -Phrase.java
-      -Picture.java
-      -Snippet.java
-     -Util
-      -AlgorithmUtil.java
-      -Generator.java
-      -JSONUtil.java
-      -PowerPointUtil.java
-     -MainRunner.java
-    -resources
-     -images
-     -JSONDATA.json
-     -package.json
+''' yaml
+- AutoGenerateArgumentation
+ - AutoGenerator
+  - src
+   - main
+    - java/ata
+     - Object
+      - Objects.java
+      - Phrase.java
+      - Picture.java
+      - Snippet.java
+     - Util
+      - AlgorithmUtil.java
+      - Generator.java
+      - JSONUtil.java
+      - PowerPointUtil.java
+     - MainRunner.java
+    - resources
+     - images
+     - JSONDATA.json
+     - package.json
 '''
 ## Design concept
 
