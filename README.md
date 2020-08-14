@@ -3,7 +3,7 @@
 [![](https://img.shields.io/github/followers/PikKACHUU.svg?style=social&label=Follow%20Me)](https://github.com/PikKACHUU)
 
 ## Data Structure
-''' yaml
+``` yaml
 - AutoGenerateArgumentation
  - AutoGenerator
   - src
@@ -24,7 +24,7 @@
      - images
      - JSONDATA.json
      - package.json
-'''
+```
 ## Design concept
 
 `Persuasive technology` is a relatively recent research area which studies the impact that digital interventions can have  on people's behaviour or beliefs.<br><br>
