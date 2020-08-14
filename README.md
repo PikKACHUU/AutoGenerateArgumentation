@@ -1,6 +1,30 @@
 # AutoGeneratePersuasivePresentation
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPikKACHUU%2FAutoGenerateArgumentation.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FPikKACHUU%2FAutoGenerateArgumentation?ref=badge_shield)
 [![](https://img.shields.io/github/followers/PikKACHUU.svg?style=social&label=Follow%20Me)](https://github.com/PikKACHUU)
+
+## Data Structure
+'''
+-AutoGenerateArgumentation
+ -AutoGenerator
+  -src
+   -main
+    -java/ata
+     -Object
+      -Objects.java
+      -Phrase.java
+      -Picture.java
+      -Snippet.java
+     -Util
+      -AlgorithmUtil.java
+      -Generator.java
+      -JSONUtil.java
+      -PowerPointUtil.java
+     -MainRunner.java
+    -resources
+     -images
+     -JSONDATA.json
+     -package.json
+'''
 ## Design concept
 
 `Persuasive technology` is a relatively recent research area which studies the impact that digital interventions can have  on people's behaviour or beliefs.<br><br>
