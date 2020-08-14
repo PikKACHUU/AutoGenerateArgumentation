@@ -10,19 +10,19 @@
    - main
     - java/ata
      - Object
-      - Objects.java
-      - Phrase.java
-      - Picture.java
-      - Snippet.java
+      - Objects.java (Definition for Objects's attributes and methods)
+      - Phrase.java. (Definition for Phrase's attributes and methods)
+      - Picture.java (Definition for Picture's attributes and methods)
+      - Snippet.java (Definition for Snippet's attributes and methods)
      - Util
-      - AlgorithmUtil.java
-      - Generator.java
-      - JSONUtil.java
-      - PowerPointUtil.java
-     - MainRunner.java
+      - AlgorithmUtil.java (Algorithms for search, find , match, return required object)
+      - Generator.java (Generator for extracting required materials from JSON resource)
+      - JSONUtil.java (JSON utility for reading and writing JSON doc)
+      - PowerPointUtil.java (Utility for generating PPT)
+     - MainRunner.java (Main)
     - resources
-     - images
-     - JSONDATA.json
+     - images (images folder)
+     - JSONDATA.json (json data)
      - package.json
 ```
 ## Design concept
